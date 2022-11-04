@@ -1,0 +1,281 @@
+.servicios {
+  @include responsive(tablet) {
+    display: none;
+  }
+
+  margin: 50px auto;
+  margin-top: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  .serviciosText {
+    text-align: center;
+    margin-bottom: 50px;
+
+    h2 {
+      font: $titulo;
+      font-size: 55px;
+      font-weight: 700;
+      color: $violetPrimary;
+      line-height: 95px;
+      width: 100%;
+    }
+
+    p {
+      width: 100%;
+      font-size: 20px;
+    }
+
+    .serviciosImg {
+      img {
+        width: 250px;
+      }
+    }
+  }
+
+  .serviciosCardsContainer {
+    width: 100vw;
+    justify-content: center;
+  }
+
+  .serviciosCardsBackground {
+    width: 90%;
+    flex: 1;
+    // background-image: url("../Assets/imagenes2/scientist2.jpg");
+    transition: all 1s;
+    display: flex;
+
+    h3,
+    img {
+      transition: all 1s;
+    }
+  }
+
+  .back0 {
+    background-image: url("../Assets/imagenes/AnalisisHumanos.jpg");
+    background-size: cover;
+  }
+
+  .back1 {
+    background-image: url("../Assets/imagenes/AtencionNiños.jpg");
+    background-size: cover;
+  }
+
+  .back2 {
+    background-image: url("../Assets/imagenes/AtencionDomicilio.jpg");
+    background-size: cover;
+  }
+
+  .back3 {
+    background-image: url("../Assets/imagenes/AnalisisVeterinarios.jpg");
+    background-size: cover;
+  }
+
+  .back4 {
+    background-image: url("../Assets/imagenes/AnalisisAgua.jpg");
+    background-size: cover;
+  }
+
+  .serviciosParrafo {
+    display: none;
+
+    p {
+      font: $texto;
+      color: white;
+      font-size: 20px;
+      height: 100px;
+    }
+  }
+
+  h3 {
+    color: white;
+  }
+
+  .serviciosCardsBackground:hover {
+    flex: 30%;
+
+    img {
+      width: 80%;
+      // transform: scale(2);
+      transform: translateY(80px);
+      margin-left: 0%;
+      margin-bottom: 50%;
+    }
+
+    .serviciosCards {
+      align-items: flex-start;
+      gap: 150px;
+    }
+    .titulo-servicios-one {
+      display: none;
+    }
+
+    .serviciosParrafo {
+      background-color: rgba($violetPrimary, 0.5);
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: center;
+      height: 100%;
+    }
+
+    p {
+      margin-left: 0px;
+      animation-name: paragraph;
+      animation-duration: 1.5s;
+    }
+  }
+
+  @keyframes paragraph {
+    0% {
+      opacity: 0%;
+    }
+
+    25% {
+      opacity: 25%;
+    }
+
+    50% {
+      opacity: 50%;
+    }
+
+    100% {
+      opacity: none;
+    }
+  }
+
+  .serviciosCards {
+    background-color: rgba($violetPrimary, 0.5);
+    width: 100%;
+    height: 100vh;
+    text-align: center;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    img {
+      width: 40%;
+      padding: 20px 0;
+    }
+
+    h3 {
+      color: white;
+      font-size: 25px;
+      font: $subtitulo;
+    }
+  }
+}
+
+// MOBILE
+.serviciosMobile {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  .accordion {
+    width: 100vw;
+    // margin-left: 15vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 !important;
+  }
+
+  .accordion-header {
+    width: 100%;
+  }
+  .accordion-button:focus {
+    color: white;
+  }
+
+  @include responsive(tablet) {
+    .accordion-item {
+      width: 100%;
+    }
+  }
+
+  @include responsive(mobile) {
+    .accordion-item {
+      width: 90%;
+      margin-left: 0;
+    }
+
+    .accordion {
+      width: 100vw;
+      margin-left: 5vw;
+    }
+  }
+
+  @include responsive(pc) {
+    display: none;
+  }
+
+  button {
+    color: white;
+    font: $texto;
+  }
+
+  .serviciosTitle {
+    width: 50%;
+    margin: 0 auto 30px;
+    text-align: center;
+  }
+
+  h2 {
+    width: 100%;
+    font: $titulo;
+    font-size: 9vw;
+    font-weight: 700;
+    color: $violetPrimary;
+    margin: 0 0 30px;
+    text-align: center;
+
+    span {
+      color: $violetSecondary;
+    }
+  }
+
+  .item1 h2 button {
+    background-color: #662483b2;
+
+    img {
+      width: 50px;
+    }
+  }
+
+  .item2 h2 button {
+    background-color: #772484b2;
+
+    img {
+      width: 50px;
+    }
+  }
+
+  .item3 h2 button {
+    background-color: #872584b2;
+
+    img {
+      width: 50px;
+    }
+  }
+
+  .item4 h2 button {
+    background-color: #982585b2;
+
+    img {
+      width: 50px;
+    }
+  }
+
+  .item5 h2 button {
+    background-color: #a82585b2;
+
+    img {
+      width: 50px;
+    }
+  }
+}

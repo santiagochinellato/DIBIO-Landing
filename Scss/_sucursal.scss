@@ -1,0 +1,517 @@
+@import "./variables";
+
+.sucursalContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  margin: 0 auto;
+  // height: 1200px;
+  max-height: 1200px;
+  //  @include responsive(mobile) {
+  //   //  max-height: 130vh;
+  //  }
+  @include responsive(tablet) {
+    max-height: 950px;
+  }
+}
+
+.sucursalText {
+  text-align: center;
+
+  p {
+    width: 50vw;
+    font-size: 20px;
+    margin: 0 auto;
+    padding: 20px;
+
+    @include responsive(tablet) {
+      font-size: 18px;
+      width: 80vw;
+      padding: 10px;
+    }
+    @include responsive(mobile) {
+      font-size: 14px;
+    }
+  }
+
+  h2 {
+    width: 80vw;
+    font: $titulo;
+    font-size: 45px;
+    font-weight: 700;
+    color: $violetPrimary;
+    line-height: 60px;
+    margin-top: 115px;
+
+    span {
+      color: $violetSecondary;
+    }
+
+    @include responsive(mobile) {
+      font-size: 30px;
+      line-height: 40px;
+      margin: 0;
+    }
+  }
+}
+
+.sucursalMainContainer {
+  display: flex;
+  flex-direction: column;
+}
+
+.sucursalInformacion {
+  overflow: hidden;
+  width: 100vw;
+  // padding: 50px;
+  padding-top: 0;
+  box-shadow: 0px 7px 9px rgb(0 0 0 / 25%);
+
+  &__Opciones {
+    margin-bottom: 120px;
+  }
+}
+
+.sucursalInformacion::-webkit-scrollbar {
+  width: 10px;
+  color: black;
+}
+
+.sucursalBotones {
+  cursor: pointer;
+  display: flex;
+  align-items: flex-end;
+  height: 7.5rem;
+  flex-direction: row;
+
+  img {
+    width: 60px;
+  }
+
+  h3 {
+    display: none;
+  }
+
+  @include responsive(mobile) {
+    height: 7rem;
+    h4 {
+      font-size: 2.5vw;
+      text-align: left;
+    }
+  }
+}
+
+.sucursalContent {
+  cursor: pointer;
+  width: fit-content;
+  margin: 0 auto;
+  height: 100%;
+  font: $subtitulo;
+}
+
+.sucursalBoton {
+  cursor: pointer;
+  display: flex;
+  height: 70%;
+  color: white;
+  text-decoration: none;
+  width: 33.33%;
+  border-radius: 10px 10px 0 0;
+
+  &:hover {
+    background-color: $violetTertiary;
+  }
+
+  @include responsive(tablet) {
+    max-height: 100px;
+  }
+  @include responsive(mobile) {
+    max-height: 70px;
+  }
+}
+
+.btnWhite {
+  cursor: pointer;
+  height: 100%;
+  color: white;
+  width: 33.33%;
+  border-radius: 10px 10px 0 0;
+
+  h4 {
+    @include responsive(pc) {
+      font-size: 1.3rem;
+    }
+    @include responsive(tablet) {
+      font-size: 25px;
+    }
+    @include responsive(mobile) {
+      font-size: 3.5vw;
+      text-align: center;
+    }
+  }
+
+  h3 {
+    display: block;
+    font-size: 20px;
+    text-align: left;
+
+    @include responsive(tablet) {
+      margin: 5px 0;
+    }
+
+    @include responsive(mobile) {
+      display: none;
+    }
+  }
+
+  @include responsive(tablet) {
+    max-height: 130px;
+  }
+  @include responsive(mobile) {
+    max-height: 100px;
+  }
+}
+
+#sucursal1 {
+  background-color: #a82585;
+  h4 {
+    @include responsive(pc) {
+      font-size: 1.3rem;
+    }
+    @include responsive(tablet) {
+      font-size: 25px;
+    }
+    @include responsive(mobile) {
+      font-size: 3.5vw;
+      text-align: center;
+    }
+  }
+}
+
+#sucursal2 {
+  background-color: #cf3ba8;
+  h4 {
+    @include responsive(pc) {
+      font-size: 1.3rem;
+    }
+    @include responsive(tablet) {
+      font-size: 25px;
+    }
+    @include responsive(mobile) {
+      font-size: 3.5vw;
+      text-align: center;
+    }
+  }
+}
+
+#sucursal3 {
+  background-color: #c7319fd9;
+  h4 {
+    @include responsive(pc) {
+      font-size: 1.3rem;
+    }
+    @include responsive(tablet) {
+      font-size: 25px;
+    }
+    @include responsive(mobile) {
+      font-size: 3.5vw;
+      text-align: center;
+    }
+  }
+}
+
+a {
+  text-decoration: none;
+}
+
+.test {
+  font: $texto;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  position: relative;
+  bottom: 280px;
+
+  h4 {
+    color: $violetSecondary;
+    font-size: 30px;
+  }
+
+  p {
+    margin: 0;
+    margin-left: 20px;
+    font-size: 1.3vw;
+    min-width: fit-content;
+  }
+
+  @include responsive(tablet) {
+    flex-direction: column-reverse;
+    width: 100vw;
+    position: relative;
+    bottom: 0;
+    align-items: center;
+    margin-top: 0;
+
+    img {
+      width: 50px;
+    }
+  }
+
+  @include responsive(mobile) {
+    bottom: 10vh;
+    margin-top: 30px;
+  }
+}
+
+.contactoSucursal {
+  width: 100%;
+  margin-left: 10vw;
+
+  @include responsive(tablet) {
+    width: 100%;
+    margin-left: 0;
+  }
+
+  @include responsive(mobile) {
+    width: 100%;
+  }
+
+  p {
+    @include responsive(tablet) {
+      font-size: 18px;
+    }
+  }
+}
+
+.fa-solid,
+.fa-brands {
+  font-size: 35px;
+  color: $violetSecondary;
+}
+
+.ubicacionSucursal {
+  position: relative;
+  bottom: -10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  width: 40vw;
+  margin-right: 100px;
+
+  @include responsive(tablet) {
+    margin-right: 0;
+    bottom: 60px;
+  }
+
+  h4 {
+    font: $titulo;
+    font-size: 18px;
+    color: $violetSecondary;
+    font-weight: bold;
+    @include responsive(mobile) {
+      font-size: 14px;
+    }
+  }
+
+  p {
+    margin: 5px auto;
+  }
+
+  .p1 {
+    font-size: 24px;
+    @include responsive(mobile) {
+      font-size: 24px;
+    }
+  }
+
+  .p2 {
+    font-size: 17px;
+    @include responsive(mobile) {
+      font-size: 17px;
+    }
+  }
+
+  .p3 {
+    font-size: 14px;
+    @include responsive(mobile) {
+      font-size: 14px;
+    }
+  }
+
+  @include responsive(mobile) {
+    bottom: 0;
+    margin-top: 0;
+    width: 80vw;
+  }
+}
+
+// MOBILE
+.sucursalesMobile {
+  @include responsive(tablet) {
+    display: none;
+  }
+}
+
+.carousel-item {
+  padding: 50px;
+
+  h3 {
+    text-align: center;
+    font: $texto2;
+    color: $violetSecondary;
+    font-size: 20px;
+  }
+
+  h4,
+  h3 {
+    margin-left: 20px;
+  }
+
+  h4 {
+    font-size: 18px;
+  }
+}
+
+.iconsMobile {
+  i {
+    color: $violetSecondary;
+  }
+}
+
+.carouselSucursal {
+  box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.25);
+  padding: 20px;
+
+  img {
+    width: 40px;
+    height: auto;
+  }
+
+  h4 {
+    font: $texto;
+    font-size: 16px;
+  }
+
+  p {
+    font: $texto;
+    font-size: 16px;
+  }
+}
+
+.sucursalInformacion {
+  @include responsive(tablet) {
+    width: 100vw;
+  }
+}
+
+@include responsive(pc) {
+  .imgCentral-container {
+    height: 45vh;
+    overflow: hidden;
+  }
+  .imgCentral {
+    position: relative;
+    bottom: 30px;
+  }
+}
+
+.imgCentral {
+  width: 100%;
+  @media (max-width: 1440px) {
+    width: auto;
+  }
+
+  @include responsive(tablet) {
+    width: auto;
+    height: 33vh;
+    position: relative;
+  }
+  @include responsive(mobile) {
+    left: -100px;
+    height: 30vh;
+  }
+}
+
+.contactoSucursales {
+  height: 40vh;
+  margin-top: 230px;
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+
+  @include responsive(tablet) {
+    margin-top: 0px;
+    width: 61vw;
+    margin-left: 5vw;
+
+    @include responsive(mobile) {
+      width: 83vw;
+      margin-top: 5vh;
+    }
+
+    p {
+      font-size: 2.5vw;
+      width: 100%;
+      min-width: fit-content;
+    }
+  }
+
+  @include responsive(mobile) {
+    p {
+      font-size: 3vw;
+    }
+  }
+}
+
+.sucursalTitle {
+  position: relative;
+  bottom: 160px;
+  font: $titulo;
+  color: white;
+  font-size: 34px;
+  width: 40%;
+  margin-left: 10vw;
+
+  @include responsive(tablet) {
+    display: none;
+  }
+}
+
+.logoUbicacion {
+  animation: logoAnimado 5s infinite;
+  @include responsive(pc) {
+    width: 130px;
+  }
+}
+
+@keyframes logoAnimado {
+  0% {
+    transform: translateY(-18px);
+  }
+
+  50% {
+    transform: translateY(30px);
+  }
+
+  100% {
+    transform: translateY(-18px);
+  }
+}
+@include responsive(tablet) {
+  @keyframes logoAnimado {
+    0% {
+      transform: translateY(-18px);
+    }
+
+    50% {
+      transform: translateY(10px);
+    }
+
+    100% {
+      transform: translateY(-18px);
+    }
+  }
+}

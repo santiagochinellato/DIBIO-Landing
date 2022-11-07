@@ -1,0 +1,639 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Font awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <link rel="stylesheet" href="./carousel/slick-1.8.1/slick/slick.css">
+  <link rel="stylesheet" href="./carousel/slick-1.8.1/slick/slick-theme.css">
+  <link rel="stylesheet" href="./css/style.min.css">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <title>DIBIO</title>
+</head>
+<!-- Testing GIthub -->
+
+<body>
+  <header>
+    <!-- NAVBAR DESKTOP -->
+    <nav class="navDesktop">
+      <div class="contenedorMenu">
+        <div class="contenedorLogo">
+          <a href=""><img class="logoMenu" src="./Assets/imagenes/logo2.png" alt=""></a>
+        </div>
+        <ul class="menu">
+          <li><a href="#inicio">INICIO</a></li>
+          <li><a href="#innovacion">NUESTRA MISION</a></li>
+          <li><a href="#servicios">SERVICIOS</a></li>
+          <li><a href="#sucursales">SUCURSALES</a></li>
+          <li><a href="#contacto">CONTACTO</a></li>
+        </ul>
+        <div class="menuBotones">
+          <a href=""><button>RESULTADOS</button></a>
+          <a href=""><button>SOLICITAR TURNOS</button></a>
+        </div>
+      </div>
+      <img class="waveNav" src="./Assets/imagenes/waveNav.png" alt="">
+    </nav>
+    <!-- NAVBAR MOBILE -->
+    <nav class="navbar navbar-expand-lg navbar-dark navbarMobile">
+      <div class="container-fluid">
+        <img class="logoNavMobile" src="./Assets/imagenes/logo2.png" alt="">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link " aria-current="page" href="#inicio"><span data-bs-toggle="collapse"
+                  data-bs-target=".navbar-collapse.show">INICIO</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#innovacion"><span data-bs-toggle="collapse"
+                  data-bs-target=".navbar-collapse.show">NUESTRA MISION</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#serviciosMobile"><span data-bs-toggle="collapse"
+                  data-bs-target=".navbar-collapse.show">SERVICIOS</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link " href="#sucursales"><span data-bs-toggle="collapse"
+                  data-bs-target=".navbar-collapse.show">SUCURSALES</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contacto"><span data-bs-toggle="collapse"
+                  data-bs-target=".navbar-collapse.show">CONTACTO</span></a>
+            </li>
+            <div class="iconsContainer">
+              <a href="" target="_blank"><i class="fa-solid fa-location-dot icono"></i></a>
+              <a href="" target="_blank"><i class="fa-brands fa-whatsapp icono"></i></a>
+              <a href="" target="_blank"><i class="fa-solid fa-phone-volume icono"></i></a>
+              <a href="" target="_blank"><i class="fa-solid fa-envelope icono"></i></a>
+            </div>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <main>
+    <!-- CAROUSEL SECTION-->
+    <section class="carouselHeader" id="inicio">
+      <ul>
+        <li class="prev"></li>
+        <li class="next"></li>
+      </ul>
+      <div class="carouselBackground">
+        <img src="./Assets/imagesCarousel/sliderBack-1.png" alt="" class="imagenBackground">
+        <img src="./Assets/imagesCarousel/sliderBack-2.png" alt="" class="imagenBackground">
+        <img src="./Assets/imagesCarousel/sliderBack-3.png" alt="" class="imagenBackground">
+        <img src="./Assets/imagesCarousel/sliderBack-4.png" alt="" class="imagenBackground">
+        <img src="./Assets/imagesCarousel/sliderBack-5.png" alt="" class="imagenBackground">
+      </div>
+
+      <div class="carouselImagenes">
+        <div><img src="./Assets/imagesCarousel/familiaSlide.png" alt="" class="imagenCarousel"></div>
+        <div><img src="./Assets/imagesCarousel/microSlide.png" alt="" class="imagenCarousel"></div>
+        <div><img src="./Assets/imagesCarousel/extraccionSlide.png" alt="" class="imagenCarousel"></div>
+        <div><img src="./Assets/imagesCarousel/maquinaSlideOne.png" alt="" class="imagenCarousel"></div>
+        <div><img src="./Assets/imagesCarousel/maquinaSlideTwo.png" alt="" class="imagenCarousel"></div>
+      </div>
+
+      <div class="carouselInfo">
+
+        <div class="infoContainer">
+          <h1>CONTAMOS PROFESIONALES <span>CAPACITADOS</span></h1>
+          <h2>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam, quidem.</h2>
+          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laboriosam quod aut illo incidunt odit,
+            excepturi, impedit dolores consequuntur earum dicta magnam quae, quidem id neque dolorem esse necessitatibus
+            molestiae. Vel molestias facere consectetur laboriosam iusto.
+          </p>
+        </div>
+        <div class="infoContainer">
+          <h1>TU FAMILIA ES NUESTRA <span>PRIORIDAD</span></h1>
+          <h2>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam, quidem.</h2>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi inventore distinctio saepe quisquam corporis
+            eligendi sunt vitae harum consectetur, quam fugiat ratione temporibus, eum incidunt accusantium obcaecati
+            modi libero dolorum? Est cum aut sequi illum!
+          </p>
+        </div>
+        <div class="infoContainer">
+          <h1>CAPACITADOS PARA <span>CUIDARTE</span></h1>
+          <h2>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam, quidem.</h2>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi inventore distinctio saepe quisquam corporis
+            eligendi sunt vitae harum consectetur, quam fugiat ratione temporibus, eum incidunt accusantium obcaecati
+            modi libero dolorum? Est cum aut sequi illum!
+          </p>
+        </div>
+        <div class="infoContainer">
+          <h1>CONTAMOS CON LA ULTIMA <span>TECNOLOGIA</span></h1>
+          <h2>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam, quidem.</h2>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi inventore distinctio saepe quisquam corporis
+            eligendi sunt vitae harum consectetur, quam fugiat ratione temporibus, eum incidunt accusantium obcaecati
+            modi libero dolorum? Est cum aut sequi illum!
+          </p>
+        </div>
+        <div class="infoContainer">
+          <h1>NUESTRO CAMINO ES LA <span>VANGUARDIA</span></h1>
+          <h2>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam, quidem.</h2>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi inventore distinctio saepe quisquam corporis
+            eligendi sunt vitae harum consectetur, quam fugiat ratione temporibus, eum incidunt accusantium obcaecati
+            modi libero dolorum? Est cum aut sequi illum!
+          </p>
+        </div>
+      </div>
+      <!-- <div class="carouselInfo2">
+        <div class="infoContainer2">
+          <div class="contenedorInfoMobile">
+            <h1>CONTAMOS PROFESIONALES <span>CAPACITADOS</span></h1>
+            <h2>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam, quidem.</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic quo officiis porro eius mollitia. Maiores et
+              maxime tenetur dicta eligendi quidem. Nihil doloremque repellat dignissimos eius aspernatur, porro quos
+              quas.
+            </p>
+          </div>
+        </div>
+        <div class="infoContainer2">
+          <div class="contenedorInfoMobile">
+            <h1>TU FAMILIA ES NUESTRA <span>PRIORIDAD</span></h1>
+            <h2>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam, quidem.</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic quo officiis porro eius mollitia. Maiores et
+              maxime tenetur dicta eligendi quidem. Nihil doloremque repellat dignissimos eius aspernatur, porro quos
+              quas.
+            </p>
+          </div>
+        </div>
+        <div class="infoContainer2">
+          <div class="contenedorInfoMobile">
+            <h1>CAPACITADOS PARA <span>CUIDARTE</span></h1>
+            <h2>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam, quidem.</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic quo officiis porro eius mollitia. Maiores et
+              maxime tenetur dicta eligendi quidem. Nihil doloremque repellat dignissimos eius aspernatur, porro quos
+              quas.
+            </p>
+          </div>
+        </div>
+        <div class="infoContainer2">
+          <div class="contenedorInfoMobile">
+            <h1>CONTAMOS CON LA ULTIMA <span>TECNOLOGIA</span></h1>
+            <h2>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam, quidem.</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic quo officiis porro eius mollitia. Maiores et
+              maxime tenetur dicta eligendi quidem. Nihil doloremque repellat dignissimos eius aspernatur, porro quos
+              quas.
+            </p>
+          </div>
+        </div>
+        <div class="infoContainer2">
+          <div class="contenedorInfoMobile">
+            <h1>NUESTRO CAMINO ES LA <span>VANGUARDIA</span></h1>
+            <h2>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam, quidem.</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic quo officiis porro eius mollitia. Maiores et
+              maxime tenetur dicta eligendi quidem. Nihil doloremque repellat dignissimos eius aspernatur, porro quos
+              quas.
+            </p>
+          </div>
+        </div>
+      </div> -->
+    </section>
+
+    <!-- SECCION INNOVACION -->
+    <section class="innovacionContainer" id="innovacion">
+      <div class="innovacionText">
+        <h2>LA INNOVACION COMO <span>CAMINO</span> </h2>
+        <p class="textoInnovacion textMobileOne">El Laboratorio nace en el año 2008 con el sueño y las aspiraciones de
+          crecer
+          constantemente ofreciendo el servicio de
+          análisis clínico humanos y veterinarios a la población de Bariloche y ciudades próximas, a través de una red
+          de
+          laboratorio de Análisis Clínicos de Alta Complejidad, a la vanguardia de los avances de la Bioquímica y
+          Medicina,
+        </p>
+        <p class="textoInnovacion textMobileTwo">desafiando constantemente los propios objetivos planteados, con un
+          equipo multidisciplinario de recursos
+          humanos que se
+          actualiza en innovadoras tecnologías y ofrece diariamente una mejora en la calidad tanto en la atención de los
+          pacientes, como así también a los médicos e instituciones solicitantes</p>
+        <p class="textoInnovacion textMobileThree">Desde nuestros inicios nos propusimos ofrecer un diagnóstico integral
+          bioquímico de
+          excelencia, siendo <span class="enfasisInnovacion">NUESTROS PACIENTES Y SU SALUD</span> la prioridad, con el
+          compromiso de acompañarlos con innovación tecnológica,
+          responsabilidad y ética
+          profesional.</p>
+        <div class="innovacionImageMobile">
+
+          <img class="logoMobile" src="./Assets/imagenes/logo.png" alt="" data-aos="fade-zoom-in"
+            data-aos-easing="ease-in-back" data-aos-easing="linear" data-aos-duration="2000">
+        </div>
+      </div>
+      <div class="innovacionImage">
+        <img class="logoUno" src="./Assets/imagenes/logoParteUno.png" alt="" data-aos="fade-up" data-aos-easing="linear"
+          data-aos-duration="3000">
+        <img class="logoDos" src="./Assets/imagenes/logoParteDos.png" alt="" data-aos="fade-zoom-in"
+          data-aos-easing="ease-in-back" data-aos-easing="linear" data-aos-duration="2000">
+        <img class="logoTres" src="./Assets/imagenes/logoParteTres.png" alt="" data-aos="fade-down"
+          data-aos-easing="linear" data-aos-duration="3000">
+      </div>
+    </section>
+    <!------------------------ NUESTROS SERVICIOS DESKTOP----------------------------------------->
+    <section class="servicios" id="servicios">
+      <div class="serviciosText">
+        <h2>NUESTROS SERVICIOS</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis maiores atque ipsum, iste quo tempora!
+        </p>
+      </div>
+      <div class="serviciosCardsContainer d-flex ">
+        <div class=" serviciosCardsBackground back0">
+          <div class="serviciosCards">
+            <img src="./Assets/imagenes/adn.png" alt="">
+            <h3 class="titulo-servicios-one">ANALISIS HUMANOS</h3>
+          </div>
+          <div class="serviciosParrafo"">
+            <h3>ANALISIS HUMANOS</h3>
+      <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Suscipit quibusdam quaerat saepe, ipsum cupiditate dolorem itaque sit accusamus omnis qui, culpa, facilis cumque mollitia hic? Quo pariatur eligendi perferendis ullam?</p>
+    </div>
+  </div>
+        <div class=" serviciosCardsBackground back1">
+            <div class="serviciosCards">
+              <img src="./Assets/imagenes/smiling-baby.png" alt="">
+              <h3 class="titulo-servicios-one"> ATENCION DE NIÑOS</h3>
+
+            </div>
+            <div class="serviciosParrafo"">
+              <h3>ATENCION DE NIÑOS</h3>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Suscipit quibusdam quaerat saepe, ipsum cupiditate dolorem itaque sit accusamus omnis qui, culpa, facilis cumque mollitia hic? Quo pariatur eligendi perferendis ullam?</p>
+          </div>
+        </div>
+        <div class=" serviciosCardsBackground back2">
+              <div class="serviciosCards">
+                <img src="./Assets/imagenes/hogar.png" alt="">
+                <h3 class="titulo-servicios-one">ATENCION A DOMICILIO</h3>
+
+              </div>
+              <div class="serviciosParrafo"">
+                <h3>ATENCION A DOMICILIO</h3>
+<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Suscipit quibusdam quaerat saepe, ipsum cupiditate dolorem itaque sit accusamus omnis qui, culpa, facilis cumque mollitia hic? Quo pariatur eligendi perferendis ullam?</p>
+</div>
+</div>
+        <div class=" serviciosCardsBackground back3">
+                <div class="serviciosCards">
+                  <img src="./Assets/imagenes/veterinary.png" alt="">
+                  <h3 class="titulo-servicios-one">ANALISIS VETERINARIOS</h3>
+
+                </div>
+                <div class="serviciosParrafo"">
+                  <h3>ANALISIS VETERINARIOS</h3>
+                  <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Suscipit quibusdam quaerat saepe, ipsum cupiditate dolorem itaque sit accusamus omnis qui, culpa, facilis cumque mollitia hic? Quo pariatur eligendi perferendis ullam?</p>
+          </div>
+        </div>         
+        <div class=" serviciosCardsBackground back4">
+                  <div class="serviciosCards">
+                    <img src="./Assets/imagenes/el-planeta-tierra.png" alt="">
+                    <h3 class="titulo-servicios-one">ANALISIS DE AGUA</h3>
+                  </div>
+                  <div class="serviciosParrafo"">
+                    <h3>ANALISIS DE AGUA</h3>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Suscipit quibusdam quaerat saepe, ipsum cupiditate dolorem itaque sit accusamus omnis qui, culpa, facilis cumque mollitia hic? Quo pariatur eligendi perferendis ullam?</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!------------------------------------- NUESTROS SERVICIOS MOBILE -------------------------------------------->
+    <section class=" serviciosMobile" id="serviciosMobile">
+                    <div class="serviciosTitle">
+                      <h2>NUESTROS <span>SERVICIOS</span> </h2>
+                    </div>
+
+                    <div class="accordion accordion-flush" id="accordionFlushExample">
+                      <div class="accordion-item item1">
+                        <h2 class="accordion-header" id="flush-headingOne">
+                          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                            <img src="./Assets/imagenes/el-planeta-tierra.png" alt=""> ANALISIS AMBIENTAL
+                          </button>
+                        </h2>
+                        <div id="flush-collapseOne" class="accordion-collapse collapse"
+                          aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                          <div class="accordion-body">Placeholder content for this accordion, which is intended to
+                            demonstrate the <code>.accordion-flush</code> class. This is the first item's accordion
+                            body.</div>
+                        </div>
+                      </div>
+                      <div class="accordion-item item2">
+                        <h2 class="accordion-header" id="flush-headingTwo">
+                          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                            <img src="./Assets/imagenes/smiling-baby.png" alt=""> ATENCION DE NIÑOS
+                          </button>
+                        </h2>
+                        <div id="flush-collapseTwo" class="accordion-collapse collapse"
+                          aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+                          <div class="accordion-body">Placeholder content for this accordion, which is intended to
+                            demonstrate the <code>.accordion-flush</code> class. This is the second item's accordion
+                            body. Let's imagine this being filled with some actual content.</div>
+                        </div>
+                      </div>
+                      <div class="accordion-item item3">
+                        <h2 class="accordion-header" id="flush-headingThree">
+                          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#flush-collapseThree" aria-expanded="false"
+                            aria-controls="flush-collapseThree">
+                            <img src="./Assets/imagenes/veterinary.png" alt=""> ANALISIS VETERINARIOS
+                          </button>
+                        </h2>
+                        <div id="flush-collapseThree" class="accordion-collapse collapse"
+                          aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+                          <div class="accordion-body">Placeholder content for this accordion, which is intended to
+                            demonstrate the <code>.accordion-flush</code> class. This is the third item's accordion
+                            body. Nothing more exciting happening here in terms of content, but just filling up the
+                            space to make it look, at least at first glance, a bit more representative of how this would
+                            look in a real-world application.</div>
+                        </div>
+                      </div>
+                      <div class="accordion-item item4">
+                        <h2 class="accordion-header" id="flush-headingFour">
+                          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#flush-collapseFour" aria-expanded="false"
+                            aria-controls="flush-collapseFour">
+                            <img src="./Assets/imagenes/adn.png" alt=""> ANALISIS GENETICOS
+                          </button>
+                        </h2>
+                        <div id="flush-collapseFour" class="accordion-collapse collapse"
+                          aria-labelledby="flush-headingFour" data-bs-parent="#accordionFlushExample">
+                          <div class="accordion-body">Placeholder content for this accordion, which is intended to
+                            demonstrate the <code>.accordion-flush</code> class. This is the third item's accordion
+                            body. Nothing more exciting happening here in terms of content, but just filling up the
+                            space to make it look, at least at first glance, a bit more representative of how this would
+                            look in a real-world application.</div>
+                        </div>
+                      </div>
+                      <div class="accordion-item item5">
+                        <h2 class="accordion-header" id="flush-headingFive">
+                          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#flush-collapseFive" aria-expanded="false"
+                            aria-controls="flush-collapseFive">
+                            <img src="./Assets/imagenes/hogar.png" alt="">ATENCION A DOMICILIO
+                          </button>
+                        </h2>
+                        <div id="flush-collapseFive" class="accordion-collapse collapse"
+                          aria-labelledby="flush-headingFive" data-bs-parent="#accordionFlushExample">
+                          <div class="accordion-body">Placeholder content for this accordion, which is intended to
+                            demonstrate the <code>.accordion-flush</code> class. This is the third item's accordion
+                            body. Nothing more exciting happening here in terms of content, but just filling up the
+                            space to make it look, at least at first glance, a bit more representative of how this would
+                            look in a real-world application.</div>
+                        </div>
+                      </div>
+                    </div>
+    </section>
+    <!-------------------------------- SECCION INNOVACION ------------------------------------------->
+    <section class="resultadosContainer">
+      <div class="resultadosText">
+        <h2><span>RESULTADOS</span> EN TUS MANOS</h2>
+        <div class="resultadosFlexMobile">
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus sit amet luctus venenatis, lectus
+            magna fringilla urna, porttitor rhoncus dolor purus non enim praesent elementum facilisis leo, vel</p>
+        </div>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate provident tempore, velit laborum nostrum
+          quos similique quas. Ullam aspernatur voluptates natus commodi atque obcaecati nisi necessitatibus,
+          voluptatibus minus quasi quidem exercitationem possimus earum at explicabo. Modi omnis, magni et at corrupti
+          aliquam soluta autem id nobis? Sit in architecto ducimus voluptatum exercitationem fugit. Illo reiciendis
+          itaque delectus, tempore eveniet quia?</p>
+        <div class="containerBotonesResultados">
+          <button class="btnContacto verResultados" type="submit">VER RESULTADOS</button>
+          <button class="btnContacto btnContacto2 buttonBot" type="submit">DIBIO BOT</button>
+        </div>
+      </div>
+      <div class="resultadosImage">
+        <img class="innOne" src="./Assets/imagenes/mock-resultados.png" alt="">
+        <img class="innTwo" src="./Assets/imagenes/mock-whatsapp.png" alt="">
+      </div>
+    </section>
+    <section class="resultadosContainerMobile">
+      <div class="resultadosTextMobile">
+        <h2><span>RESULTADOS</span> EN TUS MANOS</h2>
+        <div class="primerParrafoImagenes">
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus sit amet luctus venenatis,
+            lectus
+            magna fringilla urna, porttitor rhoncus dolor purus non enim praesent elementum facilisis leo, vel</p>
+          <div class="resultadosImageMobile">
+            <img class="innOne" src="./Assets/imagenes/mock-resultados.png" alt="">
+            <img class="innTwo" src="./Assets/imagenes/mock-whatsapp.png" alt="">
+          </div>
+        </div>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate provident tempore, velit laborum nostrum
+          quos similique quas. Ullam aspernatur voluptates natus commodi atque obcaecati nisi necessitatibus,
+          voluptatibus minus quasi quidem exercitationem possimus earum at explicabo. Modi omnis, magni et at corrupti
+          aliquam soluta autem id nobis? Sit in architecto ducimus voluptatum exercitationem fugit. Illo reiciendis
+          itaque delectus, tempore eveniet quia?</p>
+        <div class="containerBotonesResultadosMobile">
+          <button class="btnContacto verResultados" type="submit">VER RESULTADOS</button>
+          <button class="btnContacto btnContacto2 buttonBot" type="submit">DIBIO BOT</button>
+        </div>
+      </div>
+
+    </section>
+    <!--------------------------- SUCURSALES -------------------------------------------------->
+    <section class="sucursalContainer" id="sucursales">
+      <div class="sucursalText m-auto">
+        <h2>UNA <span>SUCURSAL</span><br>CERCA SIEMPRE</h2>
+        <p>Explora nuestras sucursales, en cada una de ellas encontrarás el mejor serivicio y atención pensada en
+          ayudarte</p>
+      </div>
+      <div class="sucursalMainContainer">
+        <!-- BOTONES -->
+        <div class="sucursalBotones" id="sucursalBotones">
+          <div class="btnWhite" id="sucursal1">
+            <div class="d-flex justify-content-center sucursalContent flex-column">
+              <h3>BIENVENIDO A</h3>
+              <h4>DIBIO MORALES</h4>
+            </div>
+          </div>
+          <div id="sucursal2" class="sucursalBoton">
+            <div class="d-flex justify-content-center sucursalContent flex-column">
+              <h3>BIENVENIDO A</h3>
+              <h4>DIBIO BELGRANO</h4>
+            </div>
+          </div>
+          <div id="sucursal3" class="sucursalBoton">
+            <div class="d-flex justify-content-center sucursalContent flex-column">
+              <h3>BIENVENIDO A</h3>
+              <h4>DIBIO INTECNUS</h4>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- INFORMACION -->
+      <div class="sucursalInformacion" id="sucursalInformacion">
+        <div>
+          <div class="imgCentral-container">
+            <img src="./Assets/imagenes/casa-central-dibio 1.png" alt="casa central dibio" class="imgCentral">
+          </div>
+          <h4 class="sucursalTitle"> NUESTROS MEDIOS <br> DE CONTACTO</h4>
+        </div>
+        <div class="test">
+          <div class="contactoSucursales">
+            <div class='d-flex align-items-center contactoSucursal'>
+              <i class="fa-solid fa-phone-volume"></i>
+              <p>+54 294 4546758 / +54 294 5343433 </p>
+            </div>
+            <div class='d-flex align-items-center contactoSucursal'>
+              <i class="fa-brands fa-whatsapp"></i>
+              <p>0294 433245 / 0294 556543 / 0294 4335325</p>
+            </div>
+            <div class='d-flex align-items-center contactoSucursal'>
+              <i class="fa-solid fa-envelope"></i>
+              <p>info@gmail.com - dibio@lab.com.ar</p>
+
+            </div>
+          </div>
+          <div class="ubicacionSucursal">
+            <img class="logoUbicacion" src="./Assets/imagenes/logoUbicacion.png" alt="Icono ubicacion">
+            <h4>¿CÓMO LLEGAR?</h4>
+            <p class="p1">MORALES 645</p>
+            <p class="p2">SAN CARLOS DE BARILOCHE</p>
+            <p class="p3">RÍO NEGRO, ARGENTINA</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--------------------------------------- CONTACTO ------------------------------------->
+    <section class="contactContainer" id="contacto">
+      <div class="containerTitulo">
+        <h2>MEJORAMOS LA FORMA DE <span>CONTACTO</span></h2>
+        <p class="parrafoIntroContacto">Creamos el siguiente formulario de contacto para cubrir todas tus dudas y
+          consultas. Te invitamos a
+          escribirnos completando los siguientes pasos</p>
+      </div>
+      <div class="row contactMain">
+        <div class="col-md-6 col-sm-12 contactSelector">
+          <h3>PASO 1 - ELIJA UNA SUCURSAL</h3>
+          <p>Selecciona la sucursal más cercana a tu domicilio, para obtener una atención personalizada.
+          </p>
+          <!-- FORMULARIO CONTACTO -->
+          <form action="">
+            <select name="selectSucursal" class='form-select' id="selectSucursal">
+              <option selected value="Morales">MORALES</option>
+              <option value="Belgrano">BELGRANO, </option>
+              <option value="Tiscornia">TISCORNIA</option>
+              <option value="Intecnus">INTECNUS</option>
+            </select>
+            <div id="contactInfo">
+              <div class='row datosContacto'>
+                <h3>PASO 2 - ELIJA EL MOTIVO DE CONSULTA</h3>
+                <P>Elije el motivo de tu consulta para poder derivarte al aréa correspondiente.
+                </P>
+              </div>
+              <label class="container"> CONSULTAS
+                <input type="checkbox" checked='true' name="check" onclick="onlyOne(this)">
+                <span class="checkmark"></span>
+              </label>
+
+              <label class="container"> SOLICITAR TURNO
+                <input type="checkbox" name="check" onclick="onlyOne(this)">
+                <span class="checkmark"></span>
+              </label>
+
+              <label class="container"> EXTRACCION A DOMICILIO
+                <input type="checkbox" name="check" onclick="onlyOne(this)">
+                <span class="checkmark"></span>
+              </label>
+
+              <label class="container"> QUIERO TRABAJAR CON USTEDES
+                <input type="checkbox" name="check" onclick="onlyOne(this)">
+                <span class="checkmark"></span>
+              </label>
+            </div>
+            <button class=" btnSiguiente btnContacto" type="button" id="contactButton">Siguiente</button>
+        </div>
+        <div class="contactForm col-md-6 col-sm-12" id="contactForm">
+          <div class="d-flex">
+            <button class="btnAtras" type="button" id="contactButtonBack"><i
+                class="fa-solid fa-chevron-left"></i></button>
+            <h3 class="text-center paso3">PASO 3 - ENVIE SU CONSULTA</h3>
+          </div>
+          <div class="contactForm__item">
+            <input type="text" id="nombre" placeholder="NOMBRE">
+          </div>
+          <div class="d-flex justify-content-center align-items-end contactForm__item containerNacimiento">
+            <div>
+              <input type="number" id="dni" placeholder="DNI">
+            </div>
+            <div>
+              <label class="labelNacimiento">FECHA DE NACIMIENTO</label>
+              <input type="date" id="nacimiento" placeholder="FECHA DE NACIMIENTO">
+            </div>
+          </div>
+          <div class="contactForm__item">
+            <input type="email" id="email" placeholder="MAIL">
+          </div>
+          <div class="d-flex containerArchivo contactForm__item">
+            <div>
+              <input type="tel" id="asunto" placeholder="TELEFONO">
+            </div>
+            <div class="adjuntarArchivo">
+              <!-- <label for="archivo">ADJUNTAR ARCHIVO</label> -->
+              <input type="file" id="archivo">
+            </div>
+          </div>
+          <div class="contactForm__item">
+            <textarea id="mensaje" rows="3" placeholder="ESCRIBA SU MENSAJE"></textarea>
+          </div>
+          <button class="btnContacto" type="submit">ENVIAR CONSULTA</button>
+
+        </div>
+        </form>
+    </section>
+  </main>
+  <footer>
+    <div class="footerContainer">
+      <div>
+        <img src="Assets/imagenes/logo2.png" alt="">
+      </div>
+      <div>
+        <ul class="navFooter">
+          <li><a href="">HOME</a></li>
+          <li><a href="">NUESTRA MISION</a></li>
+          <li><a href="">NUESTROS SERVICIOS</a></li>
+          <li><a href="">RESULTADOS</a></li>
+          <li><a href="">SUCURSALES</a></li>
+          <li><a href="">CONTACTO</a></li>
+        </ul>
+      </div>
+      <div class="iconsContainer iconsFooter">
+        <a href="" target="_blank"><i class="fa-brands fa-facebook icono"></i></a>
+        <a href="" target="_blank"><i class="fa-brands fa-instagram icono"></i></a>
+        <a href="" target="_blank"><i class="fa-solid fa-envelope icono"></i></a>
+      </div>
+    </div>
+    <div class="whatsappSticky">
+      <img src="./Assets/imagenes/whatsapp.png" alt="">
+    </div>
+  </footer>
+
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>AOS.init();</script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+    crossorigin="anonymous"></script>
+  <script type="module" src="./js/index.js"></script>
+  <script src="./js/contacto.js"></script>
+  <script defer src="https://use.fontawesome.com/releases/v5.15.4/js/all.js"
+    integrity="sha384-rOA1PnstxnOBLzCLMcre8ybwbTmemjzdNlILg8O7z1lUkLXozs4DHonlDtnE7fpc"
+    crossorigin="anonymous"></script>
+  <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+  <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+  <script type="text/javascript" src="./carousel/slick-1.8.1/slick/slick.min.js"></script>
+  <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  <script src="./carousel/index.js"></script>
+
+</body>
+
+</html>

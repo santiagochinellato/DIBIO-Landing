@@ -7,13 +7,10 @@
   width: 100%;
   margin: 0 auto;
   // height: 1200px;
-  max-height: 1200px;
+  max-height: 1000px;
   //  @include responsive(mobile) {
   //   //  max-height: 130vh;
   //  }
-  @include responsive(tablet) {
-    max-height: 950px;
-  }
 }
 
 .sucursalText {
@@ -82,7 +79,7 @@
   cursor: pointer;
   display: flex;
   align-items: flex-end;
-  height: 7.5rem;
+  height: 3.5rem;
   flex-direction: row;
 
   img {
@@ -113,7 +110,7 @@
 .sucursalBoton {
   cursor: pointer;
   display: flex;
-  height: 70%;
+  height: 60%;
   color: white;
   text-decoration: none;
   width: 33.33%;
@@ -140,7 +137,8 @@
 
   h4 {
     @include responsive(pc) {
-      font-size: 1.3rem;
+      font-size: 1rem;
+      margin-bottom: 0;
     }
     @include responsive(tablet) {
       font-size: 25px;
@@ -177,13 +175,15 @@
   background-color: #a82585;
   h4 {
     @include responsive(pc) {
-      font-size: 1.3rem;
+      font-size: 1rem;
+      margin-bottom: 0;
     }
     @include responsive(tablet) {
-      font-size: 25px;
+      font-size: 16px;
+      margin-bottom: 0;
     }
     @include responsive(mobile) {
-      font-size: 3.5vw;
+      font-size: 3vw;
       text-align: center;
     }
   }
@@ -193,13 +193,15 @@
   background-color: #cf3ba8;
   h4 {
     @include responsive(pc) {
-      font-size: 1.3rem;
+      font-size: 1rem;
+      margin-bottom: 0;
     }
     @include responsive(tablet) {
-      font-size: 25px;
+      font-size: 16px;
+      margin-bottom: 0;
     }
     @include responsive(mobile) {
-      font-size: 3.5vw;
+      font-size: 3vw;
       text-align: center;
     }
   }
@@ -209,13 +211,15 @@
   background-color: #c7319fd9;
   h4 {
     @include responsive(pc) {
-      font-size: 1.3rem;
+      font-size: 1rem;
+      margin-bottom: 0;
     }
     @include responsive(tablet) {
-      font-size: 25px;
+      font-size: 16px;
+      margin-bottom: 0;
     }
     @include responsive(mobile) {
-      font-size: 3.5vw;
+      font-size: 3vw;
       text-align: center;
     }
   }
@@ -231,7 +235,16 @@ a {
   justify-content: space-between;
   width: 100%;
   position: relative;
-  bottom: 280px;
+  bottom: 452px;
+  @include responsive(pc) {
+    background: linear-gradient(
+      0deg,
+      rgba(107, 35, 128, 0.25) 0%,
+      rgba(173, 76, 148, 0.25) 50%,
+      rgba(107, 35, 128, 0) 100%
+    );
+    height: 381px;
+  }
 
   h4 {
     color: $violetSecondary;
@@ -243,6 +256,10 @@ a {
     margin-left: 20px;
     font-size: 1.3vw;
     min-width: fit-content;
+    @include responsive(pc) {
+      text-shadow: 0 0 0.5em #000000;
+      color: white;
+    }
   }
 
   @include responsive(tablet) {
@@ -286,8 +303,9 @@ a {
 
 .fa-solid,
 .fa-brands {
-  font-size: 35px;
+  font-size: 30px;
   color: $violetSecondary;
+  width: 30px;
 }
 
 .ubicacionSucursal {
@@ -299,6 +317,7 @@ a {
   text-align: center;
   width: 40vw;
   margin-right: 100px;
+  justify-content: center;
 
   @include responsive(tablet) {
     margin-right: 0;
@@ -308,8 +327,13 @@ a {
   h4 {
     font: $titulo;
     font-size: 18px;
-    color: $violetSecondary;
+    color: white;
     font-weight: bold;
+    text-shadow: 0 0 0.5em #000;
+    @include responsive(tablet) {
+      color: $violetSecondary;
+      text-shadow: none;
+    }
     @include responsive(mobile) {
       font-size: 14px;
     }
@@ -406,31 +430,19 @@ a {
   }
 }
 
-@include responsive(pc) {
-  .imgCentral-container {
-    height: 45vh;
-    overflow: hidden;
-  }
-  .imgCentral {
-    position: relative;
-    bottom: 30px;
-  }
+.imgCentral-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .imgCentral {
-  width: 100%;
-  @media (max-width: 1440px) {
-    width: auto;
-  }
-
   @include responsive(tablet) {
     width: auto;
-    height: 33vh;
-    position: relative;
+    height: 50vh;
   }
   @include responsive(mobile) {
-    left: -100px;
-    height: 30vh;
+    height: 38vh;
   }
 }
 
@@ -440,7 +452,14 @@ a {
   width: 80%;
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  gap: 15px;
+
+  @include responsive(pc) {
+    i {
+      color: white;
+      text-shadow: 0 0 0.5em #000000;
+    }
+  }
 
   @include responsive(tablet) {
     margin-top: 0px;
@@ -468,12 +487,14 @@ a {
 
 .sucursalTitle {
   position: relative;
-  bottom: 160px;
+  bottom: 268px;
   font: $titulo;
   color: white;
-  font-size: 34px;
+  font-size: 24px;
   width: 40%;
   margin-left: 10vw;
+  text-shadow: 0 0 0.5em #000000;
+  z-index: 5;
 
   @include responsive(tablet) {
     display: none;
@@ -483,7 +504,7 @@ a {
 .logoUbicacion {
   animation: logoAnimado 5s infinite;
   @include responsive(pc) {
-    width: 130px;
+    width: 100px;
   }
 }
 
@@ -493,7 +514,7 @@ a {
   }
 
   50% {
-    transform: translateY(30px);
+    transform: translateY(15px);
   }
 
   100% {

@@ -361,4 +361,19 @@
 
     display: none;
   }
-} ;
+}
+
+#ocultar {
+  display: none;
+  text-decoration: underline;
+  @include responsive(mobile) {
+    display: inline-block;
+  }
+}
+
+#disparador {
+  display: block;
+  @include responsive(mobile) {
+    display: none;
+  }
+}

@@ -264,7 +264,8 @@
       "titulo titulo"
       "textoUno textoUno"
       "textoDos imagen"
-      "textoTres textoTres";
+      "textoTres textoTres"
+      "button button";
     row-gap: 20px;
 
     h2 {
@@ -365,8 +366,16 @@
 
 #ocultar {
   display: none;
-  text-decoration: underline;
+  padding: 10px 20px;
+  background-color: $violetPrimary;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  font: $texto;
+  margin: 30px auto;
+  font-size: 16px;
   @include responsive(mobile) {
+    grid-area: button;
     display: inline-block;
   }
 }

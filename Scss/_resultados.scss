@@ -17,8 +17,11 @@
   display: flex;
   flex-direction: column;
 
+  p {
+    font-size: 28px;
+  }
+
   h2 {
-    width: 50%;
     font: $titulo;
     font-size: 45px;
     font-weight: 700;
@@ -203,14 +206,15 @@
 
       .containerBotonesResultadosMobile {
         display: flex;
-        flex-direction: column;
         align-items: center;
         justify-content: center;
         margin: 20px 0px;
 
         button {
-          width: 80%;
+          width: 45%;
           margin: 10px auto;
+          font-size: 3.4vw;
+          padding: 10px 15px;
         }
       }
     }
@@ -227,6 +231,7 @@
         width: 50vw;
         font-size: 3.5vw;
         text-align: left;
+        padding: 15px;
       }
 
       .resultadosImageMobile {
@@ -336,13 +341,12 @@
 
       .containerBotonesResultadosMobile {
         display: flex;
-        flex-direction: column;
         align-items: center;
         justify-content: center;
         margin: 50px 0px;
 
         button {
-          width: 50%;
+          width: 40%;
           margin: 10px auto;
         }
       }
@@ -358,6 +362,7 @@
         width: 50vw;
         font-size: 3vw;
         text-align: left;
+        padding: 15px;
       }
 
       .resultadosImageMobile {

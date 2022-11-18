@@ -208,7 +208,7 @@
         display: flex;
         align-items: center;
         justify-content: center;
-        margin: 20px 0px;
+        margin: 0 0 20px;
 
         button {
           width: 45%;
@@ -228,7 +228,7 @@
 
       // height: 22vh;
       p {
-        width: 50vw;
+        width: 45vw;
         font-size: 3.5vw;
         text-align: left;
         padding: 15px;
@@ -241,7 +241,6 @@
         img {
           width: 50%;
           height: auto;
-          padding-left: 30px;
         }
       }
 
@@ -277,7 +276,7 @@
       .innTwo {
         position: relative;
         top: -10vh;
-        right: -8vh;
+        right: -23vw;
         filter: drop-shadow(-7px -7px 5px rgba(0, 0, 0, 0.2));
 
         -webkit-animation-name: circ-2;
@@ -372,7 +371,6 @@
         img {
           width: 40%;
           height: auto;
-          padding-left: 30px;
         }
       }
 
@@ -408,7 +406,7 @@
       .innTwo {
         position: relative;
         top: -3vh;
-        right: 0vh;
+        right: -5vw;
         filter: drop-shadow(-10px -10px 10px rgba(0, 0, 0, 0.262));
 
         -webkit-animation-name: circ-2;

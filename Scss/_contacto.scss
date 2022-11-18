@@ -1,14 +1,9 @@
 .contactContainer {
   width: 95%;
-  margin: 80px auto 0;
+  margin: 10px auto 0;
   @include responsive(tablet) {
     width: 100%;
     margin: 50px 0 0 0;
-  }
-  .containerTitulo {
-    @include responsive(pc) {
-      padding-top: 120px;
-    }
   }
   .parrafoIntroContacto {
     width: 60%;
@@ -36,7 +31,7 @@
     @include responsive(tablet) {
       font-size: 30px;
       line-height: 50px;
-      width: 100%;
+      width: 95%;
     }
   }
 }

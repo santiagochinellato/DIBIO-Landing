@@ -1,27 +1,59 @@
 .carouselHeader {
-  width: 100%;
+  width: 100vw;
   height: 100vh;
   overflow: hidden;
-  margin-top: 40px;
-  /* position: relative; */
   @include responsive(mobile) {
     width: 100vw;
+
+    ul {
+      display: none;
+    }
+  }
+  @include responsive(tablet) {
+    width: 100vw;
+
+    ul {
+      display: none;
+    }
   }
 }
 .carouselBackground {
-  position: absolute;
-  width: 100vw;
-  height: 80vh;
+  height: 90vh;
+  top: -10%;
   z-index: 1;
   @include responsive(mobile) {
     max-width: $mobile;
     max-height: 20vh;
+    top: 0%;
+  }
+  @include responsive(tablet) {
+    max-width: none;
+    max-height: 20vh;
+    top: 0%;
   }
 }
 .imagenBackground {
-  height: 80vh;
+  width: auto;
+  height: 105vh;
   @include responsive(mobile) {
-    height: 90vh;
+    width: min-content;
+    height: 50vh !important;
+    margin-top: 70px;
+  }
+  @include responsive(tablet) {
+    width: fit-content;
+    height: 65vh;
+    margin-top: 70px;
+  }
+}
+
+.imgMobile {
+  display: none;
+  @include responsive(mobile) {
+    display: inline;
+  }
+  @include responsive(tablet) {
+    display: inline;
   }
 }
 .carouselImagenes {
@@ -31,7 +63,10 @@
   display: flex;
   align-items: flex-end;
   @include responsive(mobile) {
-    top: 100px;
+    top: 5%;
+  }
+  @include responsive(tablet) {
+    top: 5%;
   }
 }
 
@@ -44,52 +79,113 @@
 .carouselInfo {
   z-index: 3;
   position: absolute;
-  top: 170px;
-  left: 47%;
-  width: 43%;
-  height: 70%;
-  background: #ffffff;
-  box-shadow: 0px 4px 9px rgba(0, 0, 0, 0.25);
-  border-radius: 6px;
-  padding: 0 20px 20px;
+  top: 15%;
+  left: 0%;
+  width: 100%;
+  height: 100%;
+  @include responsive(mobile) {
+    position: relative;
+    top: 30% !important;
+    display: flex;
+    justify-content: center;
+  }
+  @include responsive(tablet) {
+    position: relative;
+    top: 25% !important;
+    display: flex;
+    justify-content: center;
+  }
 }
-.carouselInfo2 {
-  display: none;
-}
+
 .infoContainer {
-  padding: 20px 0;
-  margin: auto 0;
+  // background: rgba(168, 37, 133, 0.3);
+  border-radius: 6px;
+  margin: auto 7%;
   display: flex !important;
   flex-direction: column !important;
   justify-content: center !important;
   align-items: flex-start !important;
-  height: 100% !important;
+  height: 80vh;
+  width: 60vw !important;
+  text-shadow: 0px 1px 10px rgba(0, 0, 0, 0.6);
+  @include responsive(mobile) {
+    margin: 0 auto;
+    background: rgba(168, 37, 133, 0.7);
+    width: 95% !important;
+    height: 50vh !important;
+    margin: 0% auto !important;
+  }
+  @include responsive(tablet) {
+    margin: 0 auto;
+    background: rgba(168, 37, 133, 0.7);
+    width: 95% !important;
+    height: 50vh;
+    margin: 0% auto !important;
+  }
 }
 
-h1 {
+.tituloSlide {
+  text-shadow: 0px 1px 10px rgba(0, 0, 0, 0.6);
   font: $titulo;
-  font-size: 46px;
-  margin: 10px 0 0 20px;
-  width: 85%;
-  color: #a82585;
+  font-size: 4vw;
+  margin: 10px 0 30px 20px;
+  width: 60%;
+  color: $violetPrimary;
+  @include responsive(mobile) {
+    width: 100%;
+    text-align: center;
+    font-size: 8.5vw !important;
+    width: auto !important;
+    color: white !important;
+    margin: 10px 10px !important;
+  }
+  @include responsive(tablet) {
+    text-align: center;
+    font-size: 8vw;
+    width: auto !important;
+    color: white !important;
+    margin: 10px 10px !important;
+  }
 }
 
-span {
-  color: #662483;
+.spanSlide {
+  color: $violetSecondary;
+  @include responsive(mobile) {
+    color: white !important;
+  }
+  @include responsive(tablet) {
+    color: white !important;
+  }
 }
 
-h2 {
+.subSlide {
+  text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.932);
   font: $subtitulo;
   font-size: 1.5vw;
-  margin: 10px 0 0 20px;
-  width: 80%;
-  color: #1d1d1b;
+  margin: 10px 20px 0 20px;
+  width: 70% !important;
+  // color: #1d1d1b;
+  color: white;
+  @include responsive(mobile) {
+    width: 100% !important;
+    text-align: center;
+    font-size: 3.5vw !important;
+    margin: 10px 10px !important;
+    color: white !important;
+  }
+  @include responsive(tablet) {
+    width: auto !important;
+    text-align: center;
+    font-size: 3vw;
+    margin: 10px 10px !important;
+    color: white !important;
+  }
 }
 p {
   font: $texto2;
   font-size: 1.4vw;
-  margin: 20px 0 0 20px;
-  width: 80%;
+  margin: 20px 20p 0 20px;
+  width: 100%;
   color: #1d1d1b;
 }
 
@@ -122,479 +218,4 @@ li {
   position: absolute;
   right: 20px;
   top: 50%;
-}
-
-@media only screen and (min-width: 320px) and (max-width: 600px) {
-  .carouselHeader {
-    width: auto;
-    height: 80vh;
-    overflow: hidden !important;
-    /* position: static !important; */
-  }
-  .carouselBackground {
-    position: absolute;
-    width: 100vw;
-    height: fit-content;
-    z-index: 1;
-  }
-
-  .carouselImagenes {
-    position: absolute;
-    bottom: 50%;
-    z-index: 2;
-    display: flex;
-    align-items: flex-end;
-    width: 100%;
-    // display: none;
-  }
-
-  .imagenCarousel {
-    width: 100vw;
-    height: auto;
-    // min-height: 65vh;
-    margin: 0 auto;
-    display: inline;
-  }
-
-  .carouselInfo {
-    top: 35%;
-    left: 5%;
-    width: 90vw;
-    height: fit-content;
-    margin: 0 auto;
-    padding: 0 10px 10px;
-    h1 {
-      font-size: 30px;
-      text-align: center;
-    }
-    h2 {
-      font: $subtitulo;
-      font-size: 4vw;
-      /* margin: 10px 0px 0px 15px; */
-      width: 100%;
-      color: #1d1d1b;
-      text-align: center;
-      margin: 10px 0;
-    }
-    p {
-      font: $texto;
-      font-size: 4vw;
-      /* margin: 20px 0px 20px 15px; */
-      width: 85%;
-      color: #1d1d1b;
-      margin: 20px auto;
-    }
-  }
-
-  .carouselInfo2 {
-    z-index: 3;
-    top: -185%;
-    width: 90vw;
-    max-width: 500px;
-    height: 70vh;
-    border-radius: 6px;
-    margin: auto !important;
-    box-shadow: 0px 4px 9px rgba(0, 0, 0, 0.25);
-  }
-  .infoContainer2 {
-    padding: 0;
-    display: flex;
-    width: auto;
-    min-height: 60vh !important;
-    height: max-content;
-    background: white;
-  }
-
-  .contenedorInfoMobile {
-    padding: 0% 0;
-    width: auto;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: flex-start;
-    gap: 1%;
-  }
-  h1 {
-    font: $titulo;
-    font-size: 9.5vw;
-    margin: 30px 0px 0px 15px;
-    width: 90%;
-    color: #a82585;
-  }
-
-  span {
-    color: #662483;
-  }
-
-  li {
-    margin-top: 20px;
-    position: relative;
-    float: left;
-
-    margin-right: 20px;
-  }
-  .prev {
-    display: none !important;
-  }
-  .next {
-    display: none !important;
-  }
-}
-
-@media only screen and (min-width: 601px) and (max-width: 768px) {
-  .carouselHeader {
-    width: auto;
-    height: 100vh;
-    overflow: hidden;
-    /* position: static !important; */
-  }
-  .carouselBackground {
-    position: absolute;
-    width: 100vw;
-    height: 80vh;
-    z-index: 1;
-  }
-
-  .carouselImagenes {
-    position: absolute;
-    top: -30%;
-    z-index: 2;
-    display: flex;
-    align-items: flex-end;
-    width: 100%;
-    height: 100%;
-  }
-
-  .imagenCarousel {
-    width: 100vw;
-    height: auto;
-    min-height: 65vh;
-    margin: 0 auto;
-    /* display: none !important; */
-  }
-
-  .carouselInfo {
-    top: 40%;
-    left: 5%;
-    width: 90vw;
-    height: fit-content;
-    margin: 0 auto;
-    h1 {
-      font-size: 45px;
-    }
-  }
-
-  .carouselInfo2 {
-    z-index: 3;
-    top: -185%;
-    width: 90vw;
-    max-width: 500px;
-    min-height: 60vh;
-    height: max-content;
-    border-radius: 6px;
-    margin: auto !important;
-    box-shadow: 0px 4px 9px rgba(0, 0, 0, 0.25);
-  }
-  .infoContainer2 {
-    padding: 0;
-    display: flex;
-    width: auto;
-    height: 70vh !important;
-    background: white;
-  }
-
-  .contenedorInfoMobile {
-    padding: 0% 0;
-    width: auto;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
-    gap: 1%;
-  }
-  h1 {
-    font: "lemonBold";
-    font-size: 7vw;
-    /* margin: 30px 0px 0px 15px; */
-    width: 90%;
-    color: #a82585;
-  }
-
-  span {
-    color: #662483;
-  }
-
-  h2 {
-    font: $titulo;
-    font-size: 2.8vw;
-    /* margin: 10px 0px 0px 15px; */
-    width: 85%;
-    color: #1d1d1b;
-  }
-  p {
-    font: $texto2;
-    font-size: 2.7vw;
-    /* margin: 20px 0px 20px 15px; */
-    width: 85%;
-    color: #1d1d1b;
-  }
-
-  li {
-    margin-top: 20px;
-    position: relative;
-    float: left;
-
-    margin-right: 20px;
-  }
-  .prev {
-    display: none !important;
-  }
-  .next {
-    display: none !important;
-  }
-}
-
-@media only screen and (min-width: 769px) and (max-width: 991px) {
-  .carouselHeader {
-    width: auto;
-    height: max-content;
-    overflow: hidden;
-    margin-bottom: 1000px;
-    /* position: static !important; */
-  }
-  .carouselBackground {
-    position: absolute;
-    width: 100vw;
-    height: 80vh;
-    z-index: 1;
-  }
-
-  .carouselImagenes {
-    position: absolute;
-    top: -30%;
-    z-index: 2;
-    display: flex;
-    align-items: flex-end;
-    width: 100%;
-    height: 100%;
-  }
-
-  .imagenCarousel {
-    width: 100vw;
-    height: auto;
-    min-height: 65vh;
-    margin: 0 auto;
-    /* display: none !important; */
-  }
-
-  .carouselInfo {
-    top: 35%;
-    left: 5%;
-    width: 90vw;
-    min-height: 35%;
-    height: max-content;
-    margin: 0 auto;
-    h1 {
-      font-size: 45px;
-    }
-  }
-
-  .carouselInfo2 {
-    z-index: 3;
-    top: -185%;
-    width: 90vw;
-    max-width: 500px;
-    height: 70vh;
-    border-radius: 6px;
-    margin: auto !important;
-    box-shadow: 0px 4px 9px rgba(0, 0, 0, 0.25);
-  }
-  .infoContainer {
-    padding: 0;
-    display: flex;
-    width: auto;
-    height: auto !important;
-    background: white;
-    margin: 30px auto;
-  }
-
-  .contenedorInfoMobile {
-    padding: 0% 0;
-    width: auto;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
-    gap: 1%;
-  }
-  h1 {
-    font: "lemonBold";
-    font-size: 45px !important;
-    /* margin: 30px 0px 0px 15px; */
-    width: 90%;
-    color: #a82585;
-  }
-
-  span {
-    color: #662483;
-  }
-
-  h2 {
-    font: $titulo;
-    font-size: 24px;
-    /* margin: 10px 0px 0px 15px; */
-    width: 85%;
-    color: #1d1d1b;
-  }
-  p {
-    font: $texto2;
-    font-size: 20px;
-    /* margin: 20px 0px 20px 15px; */
-    width: 85%;
-    color: #1d1d1b;
-  }
-
-  li {
-    margin-top: 20px;
-    position: relative;
-    float: left;
-
-    margin-right: 20px;
-  }
-  .prev {
-    display: none !important;
-  }
-  .next {
-    display: none !important;
-  }
-}
-@media only screen and (min-width: 992px) and (max-width: 1400px) {
-  .carouselHeader {
-    width: 100%;
-    height: 100vh;
-    overflow: hidden;
-    margin-top: 40px;
-    /* position: relative; */
-    @include responsive(mobile) {
-      width: 100vw;
-    }
-  }
-  .carouselBackground {
-    position: absolute;
-    width: 100vw;
-    height: 80vh;
-    z-index: 1;
-    @include responsive(mobile) {
-      max-width: $mobile;
-      max-height: 20vh;
-    }
-  }
-  .imagenBackground {
-    height: 80vh;
-    @include responsive(mobile) {
-      height: 90vh;
-    }
-  }
-  .carouselImagenes {
-    position: relative;
-    top: 0%;
-    z-index: 2;
-    display: flex;
-    align-items: flex-end;
-    @include responsive(mobile) {
-      top: 100px;
-    }
-  }
-
-  .imagenCarousel {
-    width: 55%;
-    margin: 0 0 0 50px;
-    display: none;
-  }
-
-  .carouselInfo {
-    z-index: 3;
-    position: absolute;
-    top: 170px;
-    left: 47%;
-    width: 43%;
-    min-height: 60%;
-    height: max-content;
-    background: #ffffff;
-    box-shadow: 0px 4px 9px rgba(0, 0, 0, 0.25);
-    border-radius: 6px;
-  }
-  .carouselInfo2 {
-    display: none;
-  }
-  .infoContainer {
-    padding: 20px 0;
-    margin: auto 0;
-    display: flex !important;
-    flex-direction: column !important;
-    justify-content: center !important;
-    align-items: flex-start !important;
-    height: 100% !important;
-  }
-
-  h1 {
-    font: $titulo;
-    font-size: 45px;
-    margin: 10px 0 0 20px;
-    width: 85%;
-    color: #a82585;
-  }
-
-  span {
-    color: #662483;
-  }
-
-  h2 {
-    font: $subtitulo;
-    font-size: 18px;
-    margin: 10px 0 0 20px;
-    width: 80%;
-    color: #1d1d1b;
-  }
-  p {
-    font: $texto2;
-    font-size: 16px;
-    margin: 20px 0 0 20px;
-    width: 80%;
-    color: #1d1d1b;
-  }
-
-  li {
-    margin-top: 20px;
-    position: relative;
-    float: left;
-    list-style: none !important;
-
-    margin-right: 20px;
-  }
-  .prev {
-    z-index: 5;
-    position: absolute;
-    left: 40px;
-    top: 50%;
-    display: block;
-    height: 50px;
-    width: 50px;
-    background: url("../Assets/imagesCarousel/arrow-left.png") no-repeat;
-    background-size: contain;
-  }
-  .next {
-    display: block;
-    height: 50px;
-    width: 50px;
-    background: url("../Assets/imagesCarousel/arrow-right.png") no-repeat;
-    background-size: contain;
-    z-index: 5;
-    position: absolute;
-    right: 20px;
-    top: 50%;
-  }
 }

@@ -7,8 +7,8 @@ $(".carouselBackground").slick({
   speed: 1500,
   pauseOnFocus: false,
   pauseOnHover: false,
-  autoplay: true,
-  autoplaySpeed: 5000,
+  // autoplay: true,
+  // autoplaySpeed: 5000,
   Infinite: true,
 });
 // $(".carouselImagenes").slick({
@@ -37,8 +37,8 @@ $(".carouselInfo").slick({
   speed: 2500,
   pauseOnFocus: false,
   pauseOnHover: false,
-  autoplay: true,
-  autoplaySpeed: 5000,
+  // autoplay: true,
+  // autoplaySpeed: 5000,
   Infinite: true,
   prevArrow: $(".next"),
   nextArrow: $(".prev"),

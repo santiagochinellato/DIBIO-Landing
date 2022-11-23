@@ -39,12 +39,20 @@ function addInfo(id) {
 function printInfo(sucursalSelected) {
   const {
     whatsapp1,
-    whatsapp2,
+    whatsappHref1,
     direction,
+    directionHref,
     email1,
-    email2,
+    emailHref1,
     telephone1,
     telephone2,
+    telephone3,
+    telephone4,
+    telephoneHref1,
+    telephoneHref2,
+    telephoneHref3,
+    telephoneHref4,
+    chacha,
   } = sucursalSelected;
   const infoSucursal = document.createElement("div");
   infoSucursal.className = "test";
@@ -53,25 +61,27 @@ function printInfo(sucursalSelected) {
   <div class="contactoSucursales">
   <div class='d-flex align-items-center contactoSucursal'>
     <i class="fa-solid fa-phone-volume"></i>
-    <p>${telephone1} / ${telephone2}  </p>
+    <p><a href=${telephoneHref1} target="_blank">${telephone1} </a> / <a href=${telephoneHref2} target="_blank"> ${telephone2}</a>  /<a href=${telephoneHref3} target="_blank">${telephone3}</a> ${chacha} <a href=${telephoneHref4} target="_blank">${telephone4}</a></p>
   </div>
   <div class='d-flex align-items-center contactoSucursal'>
     <i class="fa-brands fa-whatsapp"></i>
-    <p>${whatsapp1} / ${whatsapp2}  / 0294 4335325</p>
+    <p><a href=${whatsappHref1} target="_blank">${whatsapp1}</a> </p>
   </div>
   <div class='d-flex align-items-center contactoSucursal'>
     <i class="fa-solid fa-envelope"></i>
-    <p>${email1}- ${email2}</p>
+    <p><a href=${emailHref1} target="_blank">${email1}</a></p>
 
   </div>
 </div>
 <div class="ubicacionSucursal">
+<a href=${directionHref} target="_blank">
   <img class='logoUbicacion' src="./Assets/imagenes/logoUbicacion.png" alt="Icono ubicacion">
   <h4>¿CÓMO LLEGAR?</h4>
   <p class="p1">${direction}</p>
   <p class="p2">SAN CARLOS DE BARILOCHE</p>
   <p class="p3">RÍO NEGRO, ARGENTINA</p>
 </div>
+</a>
 </div>`;
   contenedor.appendChild(infoSucursal);
 }

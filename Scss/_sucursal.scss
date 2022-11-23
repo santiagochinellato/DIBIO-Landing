@@ -301,7 +301,10 @@ a {
   @include responsive(mobile) {
     width: 100%;
   }
-
+  a {
+    text-decoration: none !important;
+    color: white;
+  }
   p {
     @include responsive(tablet) {
       font-size: 18px;

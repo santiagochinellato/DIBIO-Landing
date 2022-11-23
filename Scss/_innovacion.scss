@@ -45,6 +45,7 @@
 .innovacionImage {
   grid-area: imagen;
   width: 40%;
+  margin-left: 30px;
 
   img {
     width: 65%;
@@ -104,10 +105,10 @@
 @media only screen and (min-width: 1700px) and (max-width: 1900px) {
   .innovacionImage {
     .logoUno {
-      top: 267px;
+      top: 270px;
     }
     .logoTres {
-      top: -290px;
+      top: -300px;
     }
   }
 }

@@ -296,18 +296,27 @@ a {
   @include responsive(tablet) {
     width: 100%;
     margin-left: 0;
+    gap: 15px;
   }
 
   @include responsive(mobile) {
     width: 100%;
+    gap: 15px;
   }
   a {
     text-decoration: none !important;
     color: white;
+    @include responsive(tablet) {
+      color: #000;
+    }
+
+    @include responsive(mobile) {
+      width: 100%;
+    }
   }
   p {
     @include responsive(tablet) {
-      font-size: 18px;
+      color: #000;
     }
   }
 }

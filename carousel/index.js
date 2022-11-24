@@ -31,7 +31,7 @@ $(".carouselInfo").slick({
   asNavFor: ".carouselBackground",
   arrows: true,
   dots: false,
-  // fade: true,
+  fade: true,
   // centerMode: true,
   focusOnSelect: false,
   speed: 2500,

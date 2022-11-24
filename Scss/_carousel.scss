@@ -47,13 +47,23 @@
   }
 }
 
-.imgMobile {
-  display: none;
+.backNoDesk {
+  display: inline !important;
   @include responsive(mobile) {
-    display: inline;
+    display: none !important;
   }
   @include responsive(tablet) {
-    display: inline;
+    display: none !important;
+  }
+}
+
+.imgMobile {
+  display: none !important;
+  @include responsive(mobile) {
+    display: inline !important;
+  }
+  @include responsive(tablet) {
+    display: inline !important;
   }
 }
 .carouselImagenes {

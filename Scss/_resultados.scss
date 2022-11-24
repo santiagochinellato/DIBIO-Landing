@@ -13,7 +13,7 @@
 
 .resultadosText {
   width: 60%;
-  margin: 40px 0;
+  margin: 40px 100px 40px 0;
   display: flex;
   flex-direction: column;
 
@@ -55,14 +55,14 @@
       border-radius: 6px;
     }
 
-    .verResultados:active {
-      box-shadow: none;
-      border-radius: 6px;
-      height: 40px;
-      padding: 10px;
-      font-size: 16px;
-      color: white;
-    }
+    // .verResultados:active {
+    //   box-shadow: none;
+    //   border-radius: 6px;
+    //   // height: 40px;
+    //   // padding: 10px;
+    //   font-size: 16px;
+    //   color: white;
+    // }
 
     .verResultados:hover {
       box-shadow: none;

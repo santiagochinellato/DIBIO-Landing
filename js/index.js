@@ -126,3 +126,7 @@ function printButton(id) {
 }
 
 // AOS
+
+$("#ocultar").click(function () {
+  $("#disparador").toggle(1500);
+});

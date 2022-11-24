@@ -5,10 +5,11 @@ $(".carouselBackground").slick({
   // fade: true,
   asNavFor: ".carouselInfo",
   speed: 1500,
+  focusOnSelect: false,
   pauseOnFocus: false,
-  pauseOnHover: false,
-  // autoplay: true,
-  // autoplaySpeed: 5000,
+  pauseOnHover: true,
+  autoplay: true,
+  autoplaySpeed: 5000,
   Infinite: true,
 });
 // $(".carouselImagenes").slick({
@@ -31,23 +32,14 @@ $(".carouselInfo").slick({
   arrows: true,
   dots: false,
   // fade: true,
-  cssEase: "ease",
   // centerMode: true,
   focusOnSelect: false,
   speed: 2500,
   pauseOnFocus: false,
-  pauseOnHover: false,
-  // autoplay: true,
-  // autoplaySpeed: 5000,
+  pauseOnHover: true,
+  autoplay: true,
+  autoplaySpeed: 5000,
   Infinite: true,
-  prevArrow: $(".next"),
-  nextArrow: $(".prev"),
-  responsive: [
-    {
-      breakpoint: 991,
-      settings: {
-        fade: true,
-      },
-    },
-  ],
+  prevArrow: $(".prev"),
+  nextArrow: $(".next"),
 });

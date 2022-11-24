@@ -167,10 +167,16 @@ textarea {
     margin: 30px auto 40px;
   }
 }
-
+.btnContacto:hover {
+  background-color: $violetSecondary;
+}
 .btnContacto2 {
   background-color: $violetSecondary;
   width: 240px;
+}
+
+.btnContacto2:hover {
+  background-color: $violetPrimary;
 }
 
 .btnSiguiente {

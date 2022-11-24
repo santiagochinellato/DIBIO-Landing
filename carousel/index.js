@@ -10,7 +10,7 @@ $(".carouselBackground").slick({
   pauseOnHover: true,
   autoplay: true,
   autoplaySpeed: 5000,
-  Infinite: true,
+  Infinite: false,
 });
 // $(".carouselImagenes").slick({
 //   slidesToShow: 1,
@@ -39,7 +39,7 @@ $(".carouselInfo").slick({
   pauseOnHover: true,
   autoplay: true,
   autoplaySpeed: 5000,
-  Infinite: true,
+  Infinite: false,
   prevArrow: $(".prev"),
   nextArrow: $(".next"),
 });

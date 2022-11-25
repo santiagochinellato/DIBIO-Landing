@@ -1,231 +1,136 @@
-.carouselHeader {
-  width: 100vw;
-  height: 100vh;
-  overflow: hidden;
-  @include responsive(mobile) {
-    width: 100vw;
+// .carouselHeader {
+//   width: 100vw;
+//   height: 100vh;
+//   overflow: hidden;
+//   @include responsive(mobile) {
+//     width: 100vw;
 
-    ul {
-      display: none;
-    }
-  }
-  @include responsive(tablet) {
-    width: 100vw;
+//     ul {
+//       display: none !important;
+//     }
+//   }
+//   @include responsive(tablet) {
+//     width: 100vw;
 
-    ul {
-      display: none;
-    }
-  }
-}
-.carouselBackground {
-  height: 90vh;
-  top: -10%;
-  z-index: 1;
-  @include responsive(mobile) {
-    max-width: $mobile;
-    max-height: 20vh;
-    top: 0%;
-  }
-  @include responsive(tablet) {
-    max-width: none;
-    max-height: 20vh;
-    top: 0%;
-  }
-}
-.imagenBackground {
-  width: auto;
-  height: 105vh;
-  @include responsive(mobile) {
-    width: min-content;
-    height: 50vh !important;
-    margin-top: 70px;
-  }
-  @include responsive(tablet) {
-    width: fit-content;
-    height: 65vh;
-    margin-top: 70px;
-  }
-}
+//     ul {
+//       display: none !important;
+//     }
+//   }
+// }
 
-.backNoDesk {
-  display: inline !important;
-  @include responsive(mobile) {
-    display: none !important;
-  }
-  @include responsive(tablet) {
-    display: none !important;
-  }
-}
+// .carouselBackground {
+//   height: 100vh;
+//   top: -10%;
+//   z-index: 1;
+//   @include responsive(mobile) {
+//     max-width: $mobile;
+//     max-height: 20vh;
+//     top: 0%;
+//   }
+//   @include responsive(tablet) {
+//     max-width: none;
+//     max-height: 20vh;
+//     top: 0%;
+//   }
+// }
+// .imagenBackground {
+//   width: auto;
+//   height: 105vh;
+//   @include responsive(mobile) {
+//     width: min-content;
+//     height: 50vh !important;
+//     margin-top: 70px;
+//   }
+//   @include responsive(tablet) {
+//     width: fit-content;
+//     height: 65vh;
+//     margin-top: 70px;
+//   }
+// }
 
-.imgMobile {
-  display: none !important;
-  @include responsive(mobile) {
-    display: inline !important;
-  }
-  @include responsive(tablet) {
-    display: inline !important;
-  }
-}
-.carouselImagenes {
-  position: relative;
-  top: 3%;
-  z-index: 2;
-  display: flex;
-  align-items: flex-end;
-  @include responsive(mobile) {
-    top: 5%;
-  }
-  @include responsive(tablet) {
-    top: 5%;
-  }
-}
+// .backNoDesk {
+//   display: inline !important;
+//   @include responsive(mobile) {
+//     display: none !important;
+//   }
+//   @include responsive(tablet) {
+//     display: none !important;
+//   }
+// }
 
-.imagenCarousel {
-  width: 55%;
-  margin: 0 0 0 50px;
-  display: none;
-}
+// .imgMobile {
+//   display: none !important;
+//   @include responsive(mobile) {
+//     display: inline !important;
+//   }
+//   @include responsive(tablet) {
+//     display: inline !important;
+//   }
+// }
+// .carouselImagenes {
+//   position: relative;
+//   top: 3%;
+//   z-index: 2;
+//   display: flex;
+//   align-items: flex-end;
+//   @include responsive(mobile) {
+//     top: 5%;
+//   }
+//   @include responsive(tablet) {
+//     top: 5%;
+//   }
+// }
 
-.carouselInfo {
-  z-index: 3;
-  position: absolute;
-  top: 15%;
-  left: 0%;
-  width: 100%;
-  height: 100%;
-  @include responsive(mobile) {
-    position: relative;
-    top: 30% !important;
-    display: flex;
-    justify-content: center;
-  }
-  @include responsive(tablet) {
-    position: relative;
-    top: 25% !important;
-    display: flex;
-    justify-content: center;
-  }
-}
+// .imagenCarousel {
+//   width: 55%;
+//   margin: 0 0 0 50px;
+//   display: none;
+// }
 
-.infoContainer {
-  // background: rgba(168, 37, 133, 0.3);
-  border-radius: 6px;
-  margin: auto 7%;
-  display: flex !important;
-  flex-direction: column !important;
-  justify-content: center !important;
-  align-items: flex-start !important;
-  height: 80vh;
-  width: 60vw !important;
-  text-shadow: 0px 1px 10px rgba(0, 0, 0, 0.6);
-  @include responsive(mobile) {
-    margin: 0 auto;
-    background: rgba(168, 37, 133, 0.7);
-    width: 95% !important;
-    height: 50vh !important;
-    margin: 0% auto !important;
-  }
-  @include responsive(tablet) {
-    margin: 0 auto;
-    background: rgba(168, 37, 133, 0.7);
-    width: 95% !important;
-    height: 50vh;
-    margin: 0% auto !important;
-  }
-}
+// .carouselInfo {
+//   z-index: 3;
+//   position: absolute;
+//   top: 15%;
+//   left: 0%;
+//   width: 100%;
+//   height: 100%;
+//   @include responsive(mobile) {
+//     position: relative;
+//     top: 30% !important;
+//     display: flex;
+//     justify-content: center;
+//   }
+//   @include responsive(tablet) {
+//     position: relative;
+//     top: 25% !important;
+//     display: flex;
+//     justify-content: center;
+//   }
+// }
 
-.tituloSlide {
-  text-shadow: 0px 1px 10px rgba(0, 0, 0, 0.6);
-  font: $titulo;
-  font-size: 4vw;
-  margin: 10px 0 30px 20px;
-  width: 60%;
-  color: $violetPrimary;
-  @include responsive(mobile) {
-    width: 100%;
-    text-align: center;
-    font-size: 8.5vw !important;
-    width: auto !important;
-    color: white !important;
-    margin: 10px 10px !important;
-  }
-  @include responsive(tablet) {
-    text-align: center;
-    font-size: 8vw;
-    width: auto !important;
-    color: white !important;
-    margin: 10px 10px !important;
-  }
-}
-
-.spanSlide {
-  color: $violetSecondary;
-  @include responsive(mobile) {
-    color: white !important;
-  }
-  @include responsive(tablet) {
-    color: white !important;
-  }
-}
-
-.subSlide {
-  text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.932);
-  font: $subtitulo;
-  font-size: 1.5vw;
-  margin: 10px 20px 0 20px;
-  width: 70% !important;
-  // color: #1d1d1b;
-  color: white;
-  @include responsive(mobile) {
-    width: 100% !important;
-    text-align: center;
-    font-size: 3.5vw !important;
-    margin: 10px 10px !important;
-    color: white !important;
-  }
-  @include responsive(tablet) {
-    width: auto !important;
-    text-align: center;
-    font-size: 3vw;
-    margin: 10px 10px !important;
-    color: white !important;
-  }
-}
-p {
-  font: $texto2;
-  font-size: 1.4vw;
-  margin: 20px 20p 0 20px;
-  width: 100%;
-  color: #1d1d1b;
-}
-
-li {
-  margin-top: 20px;
-  position: relative;
-  float: left;
-  list-style: none !important;
-
-  margin-right: 20px;
-}
-.prev {
-  z-index: 5;
-  position: absolute;
-  left: 40px;
-  top: 50%;
-  display: block;
-  height: 50px;
-  width: 50px;
-  background: url("../Assets/imagesCarousel/arrow-left.png") no-repeat;
-  background-size: contain;
-}
-.next {
-  display: block;
-  height: 50px;
-  width: 50px;
-  background: url("../Assets/imagesCarousel/arrow-right.png") no-repeat;
-  background-size: contain;
-  z-index: 5;
-  position: absolute;
-  right: 20px;
-  top: 50%;
-}
+// .infoContainer {
+//   background: rgba(168, 37, 133, 0.3);
+//   border-radius: 6px;
+//   margin: auto 7%;
+//   display: flex !important;
+//   flex-direction: column !important;
+//   justify-content: center !important;
+//   align-items: flex-start !important;
+//   height: 80vh;
+//   width: 60vw !important;
+//   text-shadow: 0px 1px 10px rgba(0, 0, 0, 0.6);
+//   @include responsive(mobile) {
+//     margin: 0 auto;
+//     background: rgba(168, 37, 133, 0.7);
+//     width: 95% !important;
+//     height: 50vh !important;
+//     margin: 0% auto !important;
+//   }
+//   @include responsive(tablet) {
+//     margin: 0 auto;
+//     background: rgba(168, 37, 133, 0.7);
+//     width: 95% !important;
+//     height: 50vh;
+//     margin: 0% auto !important;
+//   }
+// }

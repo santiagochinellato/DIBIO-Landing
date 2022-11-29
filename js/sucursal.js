@@ -19,6 +19,7 @@ export const SUCURSAL = [
     telephoneHref2: "tel: +542944435324",
     telephoneHref3: "tel: +542944459233",
     chacha: "",
+    img: "../Assets/imagenes/casa-central-dibio1.jpg",
   },
   {
     id: 2,
@@ -40,6 +41,7 @@ export const SUCURSAL = [
     telephoneHref2: "tel: +542944435324",
     telephoneHref3: "tel: +542944459234",
     chacha: "",
+    img: "../Assets/imagenes/belgrano.jpg",
   },
   {
     id: 3,
@@ -62,5 +64,6 @@ export const SUCURSAL = [
     telephoneHref3: "tel: +542944435324",
     telephoneHref4: "tel: +542944459234",
     chacha: "/",
+    img: "../Assets/imagenes/intecnus.png",
   },
 ];

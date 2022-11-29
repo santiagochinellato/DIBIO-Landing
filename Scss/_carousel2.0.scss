@@ -45,16 +45,16 @@
   }
   .slide2 {
     background-size: cover;
-    background-image: url(../Assets/imagesCarousel/Tecnico.jpg);
-    background-position: 0vh 0vh;
+    background-image: url(../Assets/imagesCarousel/microscopio.jpeg);
+    background-position: 0vh -30vh;
     @include responsive(mobile) {
-      background-image: url(../Assets/imagesCarousel/TecnicoMobile.jpg);
+      background-image: url(../Assets/imagesCarousel/microscopio.jpeg);
       background-size: contain;
       background-position: 0vh 8vh;
       background-repeat: no-repeat;
     }
     @include responsive(tablet) {
-      background-image: url(../Assets/imagesCarousel/TecnicoMobile.jpg);
+      background-image: url(../Assets/imagesCarousel/microscopio.jpeg);
       background-size: contain;
       background-position: 0vh 8vh;
       background-repeat: no-repeat;
@@ -128,10 +128,32 @@
       background-repeat: no-repeat;
     }
   }
+  .slide7 {
+    background-size: cover;
+    background-image: url(../Assets/imagesCarousel/personal.jpeg);
+    background-position: 0vh -10vh;
+    @include responsive(mobile) {
+      background-image: url(../Assets/imagesCarousel/personal.jpeg);
+      background-size: contain;
+      background-position: 0vh 10vh;
+      background-repeat: no-repeat;
+    }
+    @include responsive(tablet) {
+      background-image: url(../Assets/imagesCarousel/personal.jpeg);
+      background-size: contain;
+      background-position: 0vh 5vh;
+      background-repeat: no-repeat;
+    }
+  }
   .textoContainerSlide {
     width: 50%;
+    height: 130vh;
     position: relative;
-    top: 13vh;
+    background-color: #ad4c9577 !important;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    top: -20vh;
     left: 8vw;
     @include responsive(mobile) {
       background-color: #ad4c95e7 !important;
@@ -169,8 +191,9 @@
   font: $titulo;
   font-size: 4vw;
   margin: 10px 0 30px 20px;
-  width: 60%;
-  color: $violetPrimary;
+  width: 90%;
+  // color: $violetPrimary;
+  color: white;
   @include responsive(mobile) {
     width: 100%;
     text-align: center;
@@ -189,7 +212,8 @@
 }
 
 .spanSlide {
-  color: $violetSecondary;
+  // color: $violetSecondary;
+  color: white;
   @include responsive(mobile) {
     color: white !important;
   }
@@ -199,11 +223,11 @@
 }
 
 .subSlide {
-  text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.932);
+  text-shadow: 0px 0px 9px rgba(0, 0, 0, 0.801);
   font: $subtitulo;
   font-size: 1.5vw;
   margin: 10px 20px 0 20px;
-  width: 70% !important;
+  width: 90% !important;
   // color: #1d1d1b;
   color: white;
   @include responsive(mobile) {

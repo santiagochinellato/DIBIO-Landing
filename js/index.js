@@ -7,7 +7,7 @@ const ButtonParent = document.getElementById("sucursalBotones");
 // const linkMobile = document.getElementsById("item-mobile");
 // const menuCollapse = document.getElementsByClassName("navbar-toggler");
 const ButtonChildren = ButtonParent.children;
-console.log(SUCURSAL);
+// console.log(SUCURSAL);
 
 registrarEventListeners();
 
@@ -34,6 +34,7 @@ function addInfo(id) {
 
   printInfo(sucursalSelected);
   printButton(id);
+  printImg(sucursalSelected);
 }
 
 function printInfo(sucursalSelected) {
@@ -85,6 +86,7 @@ function printInfo(sucursalSelected) {
 </div>`;
   contenedor.appendChild(infoSucursal);
 }
+
 function cleaner() {
   const contenedorChildren = document.querySelector(".test");
   if (contenedor.children.length > 0) {
@@ -125,6 +127,22 @@ function printButton(id) {
   }
 }
 
+// function printImg(sucursalSelected) {
+//   const { img } = sucursalSelected;
+//   const imgSucursal = document.createElement("img");
+//   imgSucursal.className = "testTwo";
+//   cleanerTwo();
+//   imgSucursal.innerHTML = `
+// <img src=${img} alt="casa central dibio" class="imgCentral">
+// </div>`;
+//   contenedor.appendChild(imgSucursal);
+// }
+// function cleanerTwo() {
+//   const contenedorChildren = document.querySelector(".testTwo");
+//   if (contenedor.children.length > 0) {
+//     contenedorChildren.remove();
+//   }
+// }
 // AOS
 
 $("#ocultar").click(function () {

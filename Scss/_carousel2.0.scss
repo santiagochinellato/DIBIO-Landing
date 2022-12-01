@@ -45,16 +45,16 @@
   }
   .slide2 {
     background-size: cover;
-    background-image: url(../Assets/imagesCarousel/microscopio.jpeg);
-    background-position: 0vh -30vh;
+    background-image: url(../Assets/imagesCarousel/doctora.jpeg);
+    background-position: 0vh -25vh;
     @include responsive(mobile) {
-      background-image: url(../Assets/imagesCarousel/microscopio.jpeg);
+      background-image: url(../Assets/imagesCarousel/doctora.jpeg);
       background-size: contain;
       background-position: 0vh 8vh;
       background-repeat: no-repeat;
     }
     @include responsive(tablet) {
-      background-image: url(../Assets/imagesCarousel/microscopio.jpeg);
+      background-image: url(../Assets/imagesCarousel/doctora.jpeg);
       background-size: contain;
       background-position: 0vh 8vh;
       background-repeat: no-repeat;
@@ -132,16 +132,16 @@
     background-size: cover;
     background-image: url(../Assets/imagesCarousel/personal.jpeg);
     background-position: 0vh -10vh;
-    @include responsive(mobile) {
-      background-image: url(../Assets/imagesCarousel/personal.jpeg);
-      background-size: contain;
-      background-position: 0vh 10vh;
-      background-repeat: no-repeat;
-    }
     @include responsive(tablet) {
       background-image: url(../Assets/imagesCarousel/personal.jpeg);
       background-size: contain;
       background-position: 0vh 5vh;
+      background-repeat: no-repeat;
+    }
+    @include responsive(mobile) {
+      background-image: url(../Assets/imagesCarousel/personal.jpeg);
+      background-size: contain;
+      background-position: 0vh 10vh;
       background-repeat: no-repeat;
     }
   }
@@ -149,7 +149,7 @@
     width: 50%;
     height: 130vh;
     position: relative;
-    background-color: #ad4c9577 !important;
+    //background-color: #ad4c9577 !important;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -192,8 +192,8 @@
   font-size: 4vw;
   margin: 10px 0 30px 20px;
   width: 90%;
-  // color: $violetPrimary;
-  color: white;
+  color: $violetPrimary;
+  //color: white;
   @include responsive(mobile) {
     width: 100%;
     text-align: center;
@@ -212,8 +212,8 @@
 }
 
 .spanSlide {
-  // color: $violetSecondary;
-  color: white;
+  color: $violetSecondary;
+  //color: white;
   @include responsive(mobile) {
     color: white !important;
   }
@@ -228,8 +228,8 @@
   font-size: 1.5vw;
   margin: 10px 20px 0 20px;
   width: 90% !important;
-  // color: #1d1d1b;
-  color: white;
+  color: #1d1d1b;
+  //color: white;
   @include responsive(mobile) {
     width: 100% !important;
     text-align: center;

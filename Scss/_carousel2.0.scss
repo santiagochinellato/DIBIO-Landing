@@ -202,6 +202,7 @@
     width: auto !important;
     color: white !important;
     margin: 10px 10px !important;
+    -webkit-text-stroke: none;
   }
   @include responsive(tablet) {
     text-align: center;
@@ -209,6 +210,7 @@
     width: auto !important;
     color: white !important;
     margin: 10px 10px !important;
+    -webkit-text-stroke: none;
   }
 }
 
@@ -238,6 +240,7 @@
     font-size: 3.5vw !important;
     margin: 10px 10px !important;
     color: white !important;
+    -webkit-text-stroke: none;
   }
   @include responsive(tablet) {
     width: auto !important;
@@ -245,6 +248,7 @@
     font-size: 3vw;
     margin: 10px 10px !important;
     color: white !important;
+    -webkit-text-stroke: none;
   }
 }
 p {

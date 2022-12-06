@@ -194,6 +194,7 @@
   width: 90%;
   color: $violetPrimary;
   //color: white;
+  -webkit-text-stroke: 0.3px $violetSecondary;
   @include responsive(mobile) {
     width: 100%;
     text-align: center;
@@ -228,8 +229,9 @@
   font-size: 1.5vw;
   margin: 10px 20px 0 20px;
   width: 90% !important;
-  color: #1d1d1b;
-  //color: white;
+  // color: #1d1d1b;
+  color: white;
+  -webkit-text-stroke: 0.5px $violetSecondary;
   @include responsive(mobile) {
     width: 100% !important;
     text-align: center;

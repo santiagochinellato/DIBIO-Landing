@@ -146,6 +146,7 @@
       "textoUno textoUno"
       "textoDos imagen"
       "textoTres textoTres";
+    text-align: justify;
 
     h2 {
       font: $titulo;
@@ -269,6 +270,7 @@
       "textoTres textoTres"
       "button button";
     row-gap: 20px;
+    text-align: justify;
 
     h2 {
       font: $titulo;

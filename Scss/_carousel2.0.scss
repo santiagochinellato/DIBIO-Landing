@@ -226,14 +226,16 @@
 }
 
 .subSlide {
-  text-shadow: 0px 0px 9px rgba(0, 0, 0, 0.801);
+  text-shadow: 0px 0px 5px #3e0e4b;
   font: $subtitulo;
   font-size: 1.5vw;
-  margin: 10px 20px 0 20px;
+  // margin: 10px 20px 0 20px;
   width: 90% !important;
+  padding: 20px;
   // color: #1d1d1b;
+  background-color: #ad4c9577 !important;
   color: white;
-  -webkit-text-stroke: 0.5px $violetSecondary;
+  // -webkit-text-stroke: 0.3px #571969;
   @include responsive(mobile) {
     width: 100% !important;
     text-align: center;

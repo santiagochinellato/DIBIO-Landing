@@ -19,7 +19,9 @@ export const SUCURSAL = [
     telephoneHref2: "tel: +542944435324",
     telephoneHref3: "tel: +542944459233",
     chacha: "",
-    img: "../Assets/imagenes/casa-central-dibio1.jpg",
+    img: "../Assets/imagenes/casa-central-dibio2.jpg",
+    classImg: "classImg1",
+    classUbi: "classUbi1",
   },
   {
     id: 2,
@@ -41,7 +43,9 @@ export const SUCURSAL = [
     telephoneHref2: "tel: +542944435324",
     telephoneHref3: "tel: +542944459234",
     chacha: "",
-    img: "../Assets/imagenes/belgrano.jpg",
+    img: "../Assets/imagenes/belgrano2.jpg",
+    classImg: "classImg2",
+    classUbi: "classUbi2",
   },
   {
     id: 3,
@@ -64,6 +68,8 @@ export const SUCURSAL = [
     telephoneHref3: "tel: +542944435324",
     telephoneHref4: "tel: +542944459234",
     chacha: "/",
-    img: "../Assets/imagenes/intecnus.png",
+    img: "../Assets/imagenes/intecnus2.jpg",
+    classImg: "classImg3",
+    classUbi: "classUbi3",
   },
 ];

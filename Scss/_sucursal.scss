@@ -5,7 +5,7 @@
   flex-direction: column;
   justify-content: center;
   width: 100%;
-  margin: 0 auto;
+  margin: 0 auto 100px;
   // height: 1200px;
   max-height: 960px;
   @include responsive(tablet) {
@@ -24,7 +24,7 @@
 
   p {
     width: 50vw;
-    font-size: 20px;
+    font-size: 22px;
     margin: 0 auto;
     padding: 20px;
 
@@ -41,7 +41,7 @@
   h2 {
     width: 80vw;
     font: $titulo;
-    font-size: 45px;
+    font-size: 55px;
     font-weight: 700;
     color: $violetPrimary;
     line-height: 60px;
@@ -243,15 +243,9 @@ a {
   justify-content: space-between;
   width: 100%;
   position: relative;
-  bottom: 490px;
+  bottom: 0px;
   @include responsive(pc) {
-    background: linear-gradient(
-      0deg,
-      rgba(107, 35, 128, 0.25) 0%,
-      rgba(173, 76, 148, 0.25) 50%,
-      rgba(107, 35, 128, 0) 100%
-    );
-    height: 415px;
+    height: 470px;
   }
 
   h4 {
@@ -277,7 +271,12 @@ a {
     bottom: 0;
     align-items: center;
     margin-top: 0;
-
+    .imgCentral {
+      width: 120%;
+      height: 35vh;
+      position: relative;
+      bottom: 75vh;
+    }
     img {
       width: 50px;
     }
@@ -338,19 +337,23 @@ a {
   flex-direction: column;
   align-items: center;
   text-align: center;
-  width: 40vw;
-  margin-right: 100px;
+  width: 40vw !important;
+  // margin-right: 100px;
   justify-content: center;
+  right: 55vw;
+  top: 3vh;
 
   @include responsive(tablet) {
     margin-right: 0;
     bottom: 60px;
   }
-
+  .ubicacionSucursal a {
+    width: 200px;
+  }
   h4 {
     font: $titulo;
     font-size: 18px;
-    color: white;
+    color: white !important;
     font-weight: bold;
     text-shadow: 0 0 0.5em #000;
     @include responsive(tablet) {
@@ -358,12 +361,14 @@ a {
       text-shadow: none;
     }
     @include responsive(mobile) {
+      color: $violetSecondary !important;
       font-size: 14px;
     }
   }
 
   p {
     margin: 5px auto;
+    width: 200px;
   }
 
   .p1 {
@@ -388,10 +393,24 @@ a {
   }
 
   @include responsive(mobile) {
-    bottom: 0;
+    left: 0vw;
+    top: 28vh;
     margin-top: 0;
     width: 80vw;
   }
+  @include responsive(tablet) {
+    left: 0vw;
+    top: 28vh;
+    margin-top: 0;
+    width: 80vw;
+  }
+}
+
+.classUbi2 {
+  right: 60vw;
+}
+.classUbi3 {
+  right: 60vw;
 }
 
 // MOBILE
@@ -448,38 +467,54 @@ a {
 }
 
 .sucursalInformacion {
+  // background: linear-gradient(
+  //   0deg,
+  //   rgba(107, 35, 128, 0.25) 0%,
+  //   rgba(173, 76, 148, 0.25) 50%,
+  //   rgba(107, 35, 128, 0) 100%
+  // ) !important;
   @include responsive(tablet) {
     width: 100vw;
   }
 }
-
 .imgCentral-container {
   display: flex;
   justify-content: center;
   align-items: center;
+  width: 100vw;
+  // background: linear-gradient(
+  //   0deg,
+  //   rgba(107, 35, 128, 0.25) 0%,
+  //   rgba(173, 76, 148, 0.25) 50%,
+  //   rgba(107, 35, 128, 0) 100%
+  // ) !important;
   @include responsive(pc) {
     box-shadow: 0px 7px 9px rgb(0 0 0 / 25%);
   }
 }
 
 .imgCentral {
-  width: 100%;
+  width: 100vw;
+  max-height: 500px;
   @include responsive(tablet) {
     width: auto;
     height: 50vh;
   }
   @include responsive(mobile) {
+    width: 100vw;
     height: 30vh;
   }
 }
 
 .contactoSucursales {
   height: 40vh;
-  margin-top: 230px;
+  margin-top: 280px;
   width: 80%;
   display: flex;
   flex-direction: column;
   gap: 15px;
+  position: relative;
+  right: 100vw;
 
   @include responsive(pc) {
     i {
@@ -492,10 +527,13 @@ a {
     margin-top: 0px;
     width: 61vw;
     margin-left: 5vw;
-
+    left: 0;
+    bottom: -35vh;
     @include responsive(mobile) {
       width: 83vw;
       margin-top: 5vh;
+      bottom: -30vh;
+      left: 0vw;
     }
 
     p {
@@ -514,10 +552,58 @@ a {
 }
 
 .sucursalTitle {
+  z-index: 3;
   position: relative;
-  bottom: 270px;
+  bottom: 70%;
   font: $titulo;
-  color: white;
+  color: white !important;
+  font-size: 24px;
+  width: 40%;
+  margin-left: 10vw;
+  text-shadow: 0 0 0.5em #000000;
+  z-index: 5;
+
+  @include responsive(tablet) {
+    display: none;
+  }
+}
+
+.classImg1 {
+  position: relative;
+  bottom: 70%;
+  font: $titulo;
+  color: white !important;
+  font-size: 24px;
+  width: 40%;
+  margin-left: 10vw;
+  text-shadow: 0 0 0.5em #000000;
+  z-index: 5;
+
+  @include responsive(tablet) {
+    display: none;
+  }
+}
+.classImg2 {
+  position: relative;
+  bottom: 70%;
+  font: $titulo;
+  color: white !important;
+  font-size: 24px;
+  width: 40%;
+  margin-left: 10vw;
+  text-shadow: 0 0 0.5em #000000;
+  z-index: 5;
+
+  @include responsive(tablet) {
+    display: none;
+  }
+}
+
+.classImg3 {
+  position: relative;
+  bottom: 70%;
+  font: $titulo;
+  color: white !important;
   font-size: 24px;
   width: 40%;
   margin-left: 10vw;
@@ -562,5 +648,94 @@ a {
     100% {
       transform: translateY(-18px);
     }
+  }
+}
+@media only screen and (min-width: 992px) and (max-width: 1499px) {
+  .imgCentral-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    max-height: 379px;
+
+    .imgCentral {
+      max-height: 379px;
+    }
+  }
+  .sucursalTitle {
+    z-index: 3;
+    position: relative;
+    bottom: 270px;
+    font: $titulo;
+    color: white !important;
+    font-size: 24px;
+    width: 40%;
+    margin-left: 10vw;
+    text-shadow: 0 0 0.5em #000000;
+    z-index: 5;
+    margin-bottom: 0px;
+  }
+  .contactoSucursales {
+    height: 40vh;
+    margin-top: 30vh;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    position: relative;
+    right: 100vw;
+  }
+  .logoUbicacion {
+    animation: logoAnimado 5s infinite;
+    @include responsive(pc) {
+      width: 70px;
+    }
+  }
+  .ubicacionSucursal {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 40vw !important;
+    // margin-right: 100px;
+    justify-content: center;
+    right: 55vw;
+    top: -7vh;
+
+    .ubicacionSucursal a {
+      width: 200px;
+    }
+    h4 {
+      font: $titulo;
+      font-size: 18px;
+      color: white !important;
+      font-weight: bold;
+      text-shadow: 0 0 0.5em #000;
+      margin-top: 20px;
+    }
+
+    p {
+      margin: 5px auto;
+      width: 200px;
+    }
+
+    .p1 {
+      font-size: 24px;
+    }
+
+    .p2 {
+      font-size: 17px;
+    }
+
+    .p3 {
+      font-size: 14px;
+    }
+  }
+  .classUbi2 {
+    right: 60vw;
+  }
+  .classUbi3 {
+    right: 60vw;
   }
 }

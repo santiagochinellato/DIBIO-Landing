@@ -54,11 +54,20 @@ function printInfo(sucursalSelected) {
     telephoneHref3,
     telephoneHref4,
     chacha,
+    img,
+    classImg,
+    classUbi,
   } = sucursalSelected;
   const infoSucursal = document.createElement("div");
   infoSucursal.className = "test";
   cleaner();
   infoSucursal.innerHTML = `
+   <div>
+            <div class="imgCentral-container testTwo">
+              <img src=${img}  alt="casa central dibio" class="imgCentral">
+            </div>
+            <h4 class="sucursalTitle ${classImg}"> NUESTROS MEDIOS <br> DE CONTACTO</h4>
+          </div>
   <div class="contactoSucursales">
   <div class='d-flex align-items-center contactoSucursal'>
     <i class="fa-solid fa-phone-volume"></i>
@@ -74,7 +83,7 @@ function printInfo(sucursalSelected) {
 
   </div>
 </div>
-<div class="ubicacionSucursal">
+<div class="ubicacionSucursal ${classUbi}">
 <a href=${directionHref} target="_blank">
   <img class='logoUbicacion' src="./Assets/imagenes/logoUbicacion.png" alt="Icono ubicacion">
   <h4>¿CÓMO LLEGAR?</h4>

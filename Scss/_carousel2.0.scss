@@ -233,7 +233,7 @@
   width: 90% !important;
   padding: 20px;
   // color: #1d1d1b;
-  background-color: #ad4c9577 !important;
+  background-color: #ad4c9577;
   color: white;
   // -webkit-text-stroke: 0.3px #571969;
   @include responsive(mobile) {
@@ -243,6 +243,7 @@
     margin: 10px 10px !important;
     color: white !important;
     -webkit-text-stroke: none;
+    background-color: transparent !important;
   }
   @include responsive(tablet) {
     width: auto !important;
@@ -251,6 +252,7 @@
     margin: 10px 10px !important;
     color: white !important;
     -webkit-text-stroke: none;
+    background-color: transparent !important;
   }
 }
 p {

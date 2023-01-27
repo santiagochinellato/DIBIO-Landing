@@ -24,7 +24,7 @@ function registrarEventListeners() {
 // }
 function addInfo(id) {
   const sucursalSelected = SUCURSAL.find((sucursal) => sucursal.id === id);
-  console.log(ButtonChildren);
+  // console.log(ButtonChildren);
   Button1.classList.remove("btnWhite");
   Button2.classList.remove("btnWhite");
   Button3.classList.remove("btnWhite");
@@ -40,7 +40,7 @@ function addInfo(id) {
 function printInfo(sucursalSelected) {
   const {
     whatsapp1,
-    whatsappHref1,
+    whatsappHref,
     direction,
     directionHref,
     email1,
@@ -75,7 +75,7 @@ function printInfo(sucursalSelected) {
   </div>
   <div class='d-flex align-items-center contactoSucursal'>
     <i class="fa-brands fa-whatsapp"></i>
-    <p><a href=${whatsappHref1} target="_blank">${whatsapp1}</a> </p>
+    <p><a href=${whatsappHref} target="_blank">${whatsapp1}</a> </p>
   </div>
   <div class='d-flex align-items-center contactoSucursal'>
     <i class="fa-solid fa-envelope"></i>
